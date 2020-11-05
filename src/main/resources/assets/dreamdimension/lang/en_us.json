@@ -252,6 +252,7 @@
 	
 	// Ladders
 	"block.dreamdimension.dream_ladder": "Dream Ladder",
+	"block.dreamdimension.nightmare_ladder": "Nightmare Ladder",
 	
 	// Torches
 	"block.dreamdimension.dream_torch": "Dream Torch",

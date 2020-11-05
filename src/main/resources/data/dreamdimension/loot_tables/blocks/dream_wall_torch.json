@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dreamdimension:poplar_sapling"
+          "name": "dreamdimension:dream_torch"
         }
       ],
       "conditions": [
