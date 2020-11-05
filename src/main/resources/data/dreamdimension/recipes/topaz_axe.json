@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:dream_stick"
+    },
+    "X": {
+      "item": "dreamdimension:topaz"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:topaz_axe"
+  }
+}

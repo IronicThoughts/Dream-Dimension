@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:nightmare_stick"
+    },
+    "X": {
+      "item": "dreamdimension:apatite"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:apatite_hoe"
+  }
+}

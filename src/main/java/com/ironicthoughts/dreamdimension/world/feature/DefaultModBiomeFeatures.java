@@ -29,7 +29,7 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
 	public static final BlockState SHUNGITE_ORE = BlockInit.SHUNGITE_ORE.get().getDefaultState();
 	public static final BlockState JET_ORE = BlockInit.JET_ORE.get().getDefaultState();
 	public static final BlockState CHRYSOLITE_ORE = BlockInit.CHRYSOLITE_ORE.get().getDefaultState();
-	public static final BlockState PURPLE_APATITE_ORE = BlockInit.PURPLE_APATITE_ORE.get().getDefaultState();
+	public static final BlockState APATITE_ORE = BlockInit.APATITE_ORE.get().getDefaultState();
 	public static final BlockState WHITE_ONYX_ORE = BlockInit.WHITE_ONYX_ORE.get().getDefaultState();
 	public static final BlockState TOPAZ_ORE = BlockInit.TOPAZ_ORE.get().getDefaultState();
 	
@@ -91,7 +91,7 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
 	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, SHUNGITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(11, 0, 0, 64))));
 	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JET_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 0, 0, 64))));
 	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, CHRYSOLITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(14, 0, 0, 64))));
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, PURPLE_APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(18, 0, 0, 64))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(18, 0, 0, 64))));
 	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, WHITE_ONYX_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(9, 0, 0, 128))));
 	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, TOPAZ_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(13, 0, 0, 64))));
     }
@@ -110,7 +110,7 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
     }
     
     public static void addExtraApatiteOre(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, PURPLE_APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 64))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 64))));
     }
     
     public static void addExtraWhiteOnyxOre(Biome biomeIn) {

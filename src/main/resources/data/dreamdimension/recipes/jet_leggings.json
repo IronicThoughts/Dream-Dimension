@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "dreamdimension:jet_ingot"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:jet_leggings"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:chrysolite_block"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:chrysolite",
+    "count": 9
+  }
+}

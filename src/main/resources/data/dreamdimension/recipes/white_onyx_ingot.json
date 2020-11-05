@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:white_onyx_block"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:white_onyx_ingot",
+    "count": 9
+  }
+}

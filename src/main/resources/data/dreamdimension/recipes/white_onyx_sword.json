@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:nightmare_stick"
+    },
+    "X": {
+      "item": "dreamdimension:white_onyx_ingot"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:white_onyx_sword"
+  }
+}

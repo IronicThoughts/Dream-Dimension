@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "dreamdimension:apatite_ore"
+  },
+  "result": "dreamdimension:apatite",
+  "experience": 0.1,
+  "cookingtime": 100
+}

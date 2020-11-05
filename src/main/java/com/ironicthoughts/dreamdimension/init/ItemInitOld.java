@@ -39,7 +39,7 @@ public class ItemInitOld {
 	public static final Item SHUNGITE_INGOT = null;
 	public static final Item JET_INGOT = null;
 	public static final Item CHRYSOLITE = null;
-	public static final Item PURPLE_APATITE = null;
+	public static final Item APATITE = null;
 	public static final Item WHITE_ONYX_INGOT = null;
 	public static final Item TOPAZ = null;
 
@@ -58,19 +58,19 @@ public class ItemInitOld {
 	public static final Item WHITE_ONYX_PIACKAXE = null;
 	public static final Item TOPAZ_PICKAXE = null;
 	
-	public static final Item SHUNGITE_SHOVEL = null;
-	public static final Item JET_SHOVEL = null;
-	public static final Item CHRYSOLITE_SHOVEL = null;
-	public static final Item APATITE_SHOVEL = null;
-	public static final Item WHITE_ONYX_SHOVEL = null;
-	public static final Item TOPAZ_SHOVEL = null;
-	
 	public static final Item SHUNGITE_AXE = null;
 	public static final Item JET_AXE = null;
 	public static final Item CHRYSOLITE_AXE = null;
 	public static final Item APATITE_AXE = null;
 	public static final Item WHITE_ONYX_AXE = null;
 	public static final Item TOPAZ_AXE = null;
+	
+	public static final Item SHUNGITE_SHOVEL = null;
+	public static final Item JET_SHOVEL = null;
+	public static final Item CHRYSOLITE_SHOVEL = null;
+	public static final Item APATITE_SHOVEL = null;
+	public static final Item WHITE_ONYX_SHOVEL = null;
+	public static final Item TOPAZ_SHOVEL = null;
 	
 	public static final Item SHUNGITE_HOE = null;
 	public static final Item JET_HOE = null;
@@ -119,43 +119,43 @@ public class ItemInitOld {
 		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_ingot"));
 		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_ingot"));
 		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite"));
-		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite"));
-		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx"));
+		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite"));
+		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_ingot"));
 		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz"));
 
 		// Tools
 		event.getRegistry().register(new SwordItem(ModItemTier.SHUNGITE, 7, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_sword"));
 		event.getRegistry().register(new SwordItem(ModItemTier.JET, 7, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_sword"));
 		event.getRegistry().register(new SwordItem(ModItemTier.CHRYSOLITE, 7, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_sword"));
-		event.getRegistry().register(new SwordItem(ModItemTier.APATITE, 7, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_sword"));
+		event.getRegistry().register(new SwordItem(ModItemTier.APATITE, 7, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_sword"));
 		event.getRegistry().register(new SwordItem(ModItemTier.WHITE_ONYX, 7, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_sword"));
 		event.getRegistry().register(new SwordItem(ModItemTier.TOPAZ, 7, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_sword"));
 
 		event.getRegistry().register(new PickaxeItem(ModItemTier.SHUNGITE, 4, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_pickaxe"));
 		event.getRegistry().register(new PickaxeItem(ModItemTier.JET, 4, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_pickaxe"));
 		event.getRegistry().register(new PickaxeItem(ModItemTier.CHRYSOLITE, 4, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_pickaxe"));
-		event.getRegistry().register(new PickaxeItem(ModItemTier.APATITE, 4, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_pickaxe"));
+		event.getRegistry().register(new PickaxeItem(ModItemTier.APATITE, 4, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_pickaxe"));
 		event.getRegistry().register(new PickaxeItem(ModItemTier.WHITE_ONYX, 4, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_pickaxe"));
 		event.getRegistry().register(new PickaxeItem(ModItemTier.TOPAZ, 4, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_pickaxe"));
-
-		event.getRegistry().register(new ShovelItem(ModItemTier.SHUNGITE, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_shovel"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.JET, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_shovel"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.CHRYSOLITE, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_shovel"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.APATITE, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_shovel"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.WHITE_ONYX, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_shovel"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.TOPAZ, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_shovel"));
 
 		event.getRegistry().register(new AxeItem(ModItemTier.SHUNGITE, 11, 3.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_axe"));
 		event.getRegistry().register(new AxeItem(ModItemTier.JET, 11, 3.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_axe"));
 		event.getRegistry().register(new AxeItem(ModItemTier.CHRYSOLITE, 11, 3.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_axe"));
-		event.getRegistry().register(new AxeItem(ModItemTier.APATITE, 11, 3.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_axe"));
+		event.getRegistry().register(new AxeItem(ModItemTier.APATITE, 11, 3.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_axe"));
 		event.getRegistry().register(new AxeItem(ModItemTier.WHITE_ONYX, 11, 3.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_axe"));
 		event.getRegistry().register(new AxeItem(ModItemTier.TOPAZ, 11, 3.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_axe"));
+
+		event.getRegistry().register(new ShovelItem(ModItemTier.SHUNGITE, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_shovel"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.JET, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_shovel"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.CHRYSOLITE, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_shovel"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.APATITE, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_shovel"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.WHITE_ONYX, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_shovel"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.TOPAZ, 2, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_shovel"));
 
 		event.getRegistry().register(new HoeItem(ModItemTier.SHUNGITE, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_hoe"));
 		event.getRegistry().register(new HoeItem(ModItemTier.JET, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_hoe"));
 		event.getRegistry().register(new HoeItem(ModItemTier.CHRYSOLITE, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_hoe"));
-		event.getRegistry().register(new HoeItem(ModItemTier.APATITE, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_hoe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.APATITE, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_hoe"));
 		event.getRegistry().register(new HoeItem(ModItemTier.WHITE_ONYX, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_hoe"));
 		event.getRegistry().register(new HoeItem(ModItemTier.TOPAZ, 5.0f, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_hoe"));
 
@@ -163,28 +163,28 @@ public class ItemInitOld {
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SHUNGITE, EquipmentSlotType.HEAD, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_helmet"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.JET, EquipmentSlotType.HEAD, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_helmet"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.CHRYSOLITE, EquipmentSlotType.HEAD, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_helmet"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.HEAD, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_helmet"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.HEAD, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_helmet"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.WHITE_ONYX, EquipmentSlotType.HEAD, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_helmet"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.TOPAZ, EquipmentSlotType.HEAD, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_helmet"));
 
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SHUNGITE, EquipmentSlotType.CHEST, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_chestplate"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.JET, EquipmentSlotType.CHEST, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_chestplate"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.CHRYSOLITE, EquipmentSlotType.CHEST, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_chestplate"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.CHEST, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_chestplate"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.CHEST, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_chestplate"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.WHITE_ONYX, EquipmentSlotType.CHEST, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_chestplate"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.TOPAZ, EquipmentSlotType.CHEST, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_chestplate"));
 
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SHUNGITE, EquipmentSlotType.LEGS, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_leggings"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.JET, EquipmentSlotType.LEGS, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_leggings"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.CHRYSOLITE, EquipmentSlotType.LEGS, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_leggings"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.LEGS, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_leggings"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.LEGS, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_leggings"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.WHITE_ONYX, EquipmentSlotType.LEGS, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_leggings"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.TOPAZ, EquipmentSlotType.LEGS, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_leggings"));
 
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.SHUNGITE, EquipmentSlotType.FEET, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_boots"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.JET, EquipmentSlotType.FEET, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("jet_boots"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.CHRYSOLITE, EquipmentSlotType.FEET, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("chrysolite_boots"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.FEET, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("purple_apatite_boots"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.APATITE, EquipmentSlotType.FEET, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("apatite_boots"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.WHITE_ONYX, EquipmentSlotType.FEET, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("white_onyx_boots"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.TOPAZ, EquipmentSlotType.FEET, new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("topaz_boots"));
 
@@ -202,7 +202,7 @@ public class ItemInitOld {
 			return Ingredient.fromItems(ItemInitOld.CHRYSOLITE);
 		}),
 		APATITE(3, 764, 14.0F, 6.5F, 13, () -> {
-			return Ingredient.fromItems(ItemInitOld.PURPLE_APATITE);
+			return Ingredient.fromItems(ItemInitOld.APATITE);
 		}),
 		WHITE_ONYX(3, 2016, 9.0F, 4.0F, 15, () -> {
 			return Ingredient.fromItems(ItemInitOld.WHITE_ONYX_INGOT);
@@ -271,7 +271,7 @@ public class ItemInitOld {
 			return Ingredient.fromItems(ItemInitOld.CHRYSOLITE);
 				}),
 		APATITE(DreamDimension.MOD_ID + ":apatite", 28, new int[] { 2, 5, 7, 2 }, 13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.5F, () -> {
-			return Ingredient.fromItems(ItemInitOld.PURPLE_APATITE);
+			return Ingredient.fromItems(ItemInitOld.APATITE);
 				}),
 		WHITE_ONYX(DreamDimension.MOD_ID + ":white_onyx", 35, new int[] { 3, 6, 8, 3 }, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5F, () -> {
 			return Ingredient.fromItems(ItemInitOld.WHITE_ONYX_INGOT);

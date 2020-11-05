@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:apatite_block"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:apatite",
+    "count": 9
+  }
+}

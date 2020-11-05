@@ -43,7 +43,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> SHUNGITE_BLOCK = BLOCKS.register("shungite_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<Block> JET_BLOCK = BLOCKS.register("jet_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<Block> CHRYSOLITE_BLOCK = BLOCKS.register("chrysolite_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
-	public static final RegistryObject<Block> PURPLE_APATITE_BLOCK = BLOCKS.register("purple_apatite_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> APATITE_BLOCK = BLOCKS.register("apatite_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<Block> WHITE_ONYX_BLOCK = BLOCKS.register("white_onyx_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<Block> TOPAZ_BLOCK = BLOCKS.register("topaz_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 
@@ -59,7 +59,7 @@ public class BlockInit {
 	public static final RegistryObject<OreBlock> SHUNGITE_ORE = BLOCKS.register("shungite_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<OreBlock> JET_ORE = BLOCKS.register("jet_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<OreBlock> CHRYSOLITE_ORE = BLOCKS.register("chrysolite_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
-	public static final RegistryObject<OreBlock> PURPLE_APATITE_ORE = BLOCKS.register("purple_apatite_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<OreBlock> APATITE_ORE = BLOCKS.register("apatite_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<OreBlock> WHITE_ONYX_ORE = BLOCKS.register("white_onyx_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<OreBlock> TOPAZ_ORE = BLOCKS.register("topaz_ore", () -> new OreBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	

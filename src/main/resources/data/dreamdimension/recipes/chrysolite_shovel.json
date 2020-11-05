@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:dream_stick"
+    },
+    "X": {
+      "item": "dreamdimension:chrysolite"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:chrysolite_shovel"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "dreamdimension:chrysolite_ore"
+  },
+  "result": "dreamdimension:chrysolite",
+  "experience": 0.1,
+  "cookingtime": 100
+}

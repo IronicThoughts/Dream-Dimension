@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "dreamdimension:shungite_ingot"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:shungite_chestplate"
+  }
+}

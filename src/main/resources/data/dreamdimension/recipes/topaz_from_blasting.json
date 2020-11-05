@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "dreamdimension:topaz_ore"
+  },
+  "result": "dreamdimension:topaz",
+  "experience": 0.1,
+  "cookingtime": 100
+}

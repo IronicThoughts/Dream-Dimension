@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "dreamdimension:shungite_ore"
+  },
+  "result": "dreamdimension:shungite_ingot",
+  "experience": 0.1,
+  "cookingtime": 100
+}
