@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:ebony_planks"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:ebony_button"
+  }
+}

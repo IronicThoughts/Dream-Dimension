@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:dead_log"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:dead_wood",
+    "count": 3
+  }
+}

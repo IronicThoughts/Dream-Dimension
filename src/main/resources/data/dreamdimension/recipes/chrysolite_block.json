@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:chrysolite"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:chrysolite_block"
+  }
+}

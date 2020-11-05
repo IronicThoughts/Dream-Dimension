@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "dreamdimension:dead_logs"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:dead_planks",
+    "count": 4
+  }
+}

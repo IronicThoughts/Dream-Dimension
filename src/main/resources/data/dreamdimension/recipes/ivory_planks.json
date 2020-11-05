@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "dreamdimension:ivory_logs"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:ivory_planks",
+    "count": 4
+  }
+}

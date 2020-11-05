@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "dreamdimension:mahoe_logs"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:mahoe_planks",
+    "count": 4
+  }
+}

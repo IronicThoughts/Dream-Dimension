@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:ivory_log"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:ivory_wood",
+    "count": 3
+  }
+}

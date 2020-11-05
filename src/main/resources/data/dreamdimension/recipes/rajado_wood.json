@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:rajado_log"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:rajado_wood",
+    "count": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:dream_stick"
+    },
+    "W": {
+      "item": "dreamdimension:ivory_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:ivory_fence",
+    "count": 3
+  }
+}

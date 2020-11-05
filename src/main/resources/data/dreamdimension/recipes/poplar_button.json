@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:poplar_planks"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:poplar_button"
+  }
+}

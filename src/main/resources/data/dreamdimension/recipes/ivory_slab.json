@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:ivory_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:ivory_slab",
+    "count": 6
+  }
+}

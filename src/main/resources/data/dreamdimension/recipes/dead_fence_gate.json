@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:nightmare_stick"
+    },
+    "W": {
+      "item": "dreamdimension:dead_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:dead_fence_gate"
+  }
+}

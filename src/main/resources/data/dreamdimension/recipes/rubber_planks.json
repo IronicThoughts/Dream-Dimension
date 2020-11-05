@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "dreamdimension:rubber_logs"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:rubber_planks",
+    "count": 4
+  }
+}

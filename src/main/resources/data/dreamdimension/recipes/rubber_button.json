@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:rubber_planks"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:rubber_button"
+  }
+}

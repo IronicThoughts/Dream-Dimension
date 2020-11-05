@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:rajado_planks"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:rajado_button"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:nightmare_stick"
+    },
+    "W": {
+      "item": "dreamdimension:poplar_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:poplar_fence_gate"
+  }
+}

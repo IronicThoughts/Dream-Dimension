@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:maple_planks"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:maple_button"
+  }
+}

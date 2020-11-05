@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:dead_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:dead_slab",
+    "count": 6
+  }
+}

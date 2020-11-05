@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:poplar_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:poplar_pressure_plate"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:nightmare_stick"
+    },
+    "W": {
+      "item": "dreamdimension:ebony_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:ebony_fence",
+    "count": 3
+  }
+}

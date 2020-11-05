@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dreamdimension:dead_planks"
+    }
+  ],
+  "result": {
+    "item": "dreamdimension:dead_button"
+  }
+}

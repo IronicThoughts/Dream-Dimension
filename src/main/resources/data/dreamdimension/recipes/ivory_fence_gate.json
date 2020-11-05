@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:dream_stick"
+    },
+    "W": {
+      "item": "dreamdimension:ivory_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:ivory_fence_gate"
+  }
+}

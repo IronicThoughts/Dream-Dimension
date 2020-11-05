@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "dreamdimension:nightmare_stick"
+    },
+    "W": {
+      "item": "dreamdimension:rajado_planks"
+    }
+  },
+  "result": {
+    "item": "dreamdimension:rajado_fence",
+    "count": 3
+  }
+}
