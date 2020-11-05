@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "dreamdimension:block/rajado_log" },
+        "axis=z":   { "model": "dreamdimension:block/rajado_log", "x": 90 },
+        "axis=x":   { "model": "dreamdimension:block/rajado_log", "x": 90, "y": 90 }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east": { "model": "dreamdimension:block/wall_dream_torch" },
+        "facing=south": { "model": "dreamdimension:block/wall_dream_torch", "y": 90 },
+        "facing=west": { "model": "dreamdimension:block/wall_dream_torch", "y": 180 },
+        "facing=north": { "model": "dreamdimension:block/wall_dream_torch", "y": 270 }
+    }
+}

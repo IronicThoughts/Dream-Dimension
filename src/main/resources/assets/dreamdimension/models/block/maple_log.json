@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "dreamdimension:blocks/maple_log_top",
+        "side": "dreamdimension:blocks/maple_log"
+    }
+}

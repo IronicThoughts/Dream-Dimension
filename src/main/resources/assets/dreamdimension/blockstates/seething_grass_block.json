@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "snowy=false": [
+            { "model": "dreamdimension:block/seething_grass_block" },
+            { "model": "dreamdimension:block/seething_grass_block", "y": 90 },
+            { "model": "dreamdimension:block/seething_grass_block", "y": 180 },
+            { "model": "dreamdimension:block/seething_grass_block", "y": 270 }
+        ]
+    }
+}

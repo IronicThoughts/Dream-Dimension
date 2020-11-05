@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+	"dreamdimension:rajado_leaves",
+	"dreamdimension:mahoe_leaves",
+	"dreamdimension:poplar_leaves",
+	"dreamdimension:ebony_leaves",
+	"dreamdimension:dead_leaves"
+  ]
+}

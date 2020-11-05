@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "dreamdimension:block/mahoe_pressure_plate" },
+        "powered=true": { "model": "dreamdimension:block/mahoe_pressure_plate_down" }
+    }
+}

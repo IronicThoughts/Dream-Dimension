@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "particle": "dreamdimension:blocks/weeping_wisteria",
+        "cross": "dreamdimension:blocks/weeping_wisteria"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/button",
+    "textures": {
+        "texture": "dreamdimension:blocks/rubber_planks"
+    }
+}

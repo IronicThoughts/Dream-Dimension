@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "dreamdimension:blocks/mahoe_door_bottom",
+        "top": "dreamdimension:blocks/mahoe_door_top"
+    }
+}

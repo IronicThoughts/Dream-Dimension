@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "dreamdimension:blocks/ebony_door_bottom",
+        "top": "dreamdimension:blocks/ebony_door_top"
+    }
+}

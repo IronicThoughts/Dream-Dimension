@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "dreamdimension:blocks/poplar_door_bottom",
+        "top": "dreamdimension:blocks/poplar_door_top"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "dreamdimension:block/nightmare_ladder" },
+        "facing=east":  { "model": "dreamdimension:block/nightmare_ladder", "y": 90 },
+        "facing=south": { "model": "dreamdimension:block/nightmare_ladder", "y": 180 },
+        "facing=west":  { "model": "dreamdimension:block/nightmare_ladder", "y": 270 }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "dreamdimension:blocks/white_onyx_block"
+    }
+}

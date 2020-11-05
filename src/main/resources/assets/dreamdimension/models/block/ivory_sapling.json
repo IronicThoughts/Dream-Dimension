@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "dreamdimension:blocks/ivory_sapling"
+    }
+}

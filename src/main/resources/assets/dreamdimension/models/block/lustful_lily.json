@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "particle": "dreamdimension:blocks/lustful_lily",
+        "cross": "dreamdimension:blocks/lustful_lily"
+    }
+}

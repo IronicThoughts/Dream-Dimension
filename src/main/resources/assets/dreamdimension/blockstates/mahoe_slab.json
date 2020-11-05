@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "dreamdimension:block/mahoe_slab" },
+        "type=top": { "model": "dreamdimension:block/mahoe_slab_top" },
+        "type=double": { "model": "dreamdimension:block/mahoe_planks" }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "dreamdimension:blocks/rajado_log",
+        "side": "dreamdimension:blocks/rajado_log"
+    }
+}

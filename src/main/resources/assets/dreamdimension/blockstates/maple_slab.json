@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "dreamdimension:block/maple_slab" },
+        "type=top": { "model": "dreamdimension:block/maple_slab_top" },
+        "type=double": { "model": "dreamdimension:block/maple_planks" }
+    }
+}

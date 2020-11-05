@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "particle": "dreamdimension:blocks/seething_plant",
+        "cross": "dreamdimension:blocks/seething_plant"
+    }
+}

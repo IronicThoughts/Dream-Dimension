@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "dreamdimension:rajado_pressure_plate",
+    "dreamdimension:mahoe_pressure_plate",
+    "dreamdimension:poplar_pressure_plate",
+    "dreamdimension:ebony_pressure_plate",
+    "dreamdimension:dead_pressure_plate"
+  ]
+}

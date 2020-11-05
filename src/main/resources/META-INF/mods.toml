@@ -1,0 +1,37 @@
+modLoader="javafml" 
+
+loaderVersion="[31,)"
+
+[[mods]] 
+
+modId="dreamdimension" 
+
+version="1.0" 
+
+displayName="The Dream Dimension" 
+
+credits="Made by IronicThoughts, Major thanks to MaeMyers (Can be found on Spotify as 'Mae Myers')" 
+
+authors="IronicThoughts" 
+
+description='''
+The Dream Dimension is a world where you will come across all sorts of biomes
+that are based off of normal human emotions! This includes (but is not limited
+to) the Seething Woodlands, the Joyful Flatlands, and the Melancholy Meadows!
+This mod also adds 2 seperate biomes called the "Nightmare Forest" and the 
+"Enlightened Woods" where you can find valuable items! 
+'''
+
+[[dependencies.dreamdimension]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[31,)" 
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dreamdimension]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

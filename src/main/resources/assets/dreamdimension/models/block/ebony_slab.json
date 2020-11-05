@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "dreamdimension:blocks/ebony_planks",
+        "top": "dreamdimension:blocks/ebony_planks",
+        "side": "dreamdimension:blocks/ebony_planks"
+    }
+}

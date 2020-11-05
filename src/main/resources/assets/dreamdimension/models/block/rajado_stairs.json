@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "dreamdimension:blocks/rajado_planks",
+        "top": "dreamdimension:blocks/rajado_planks",
+        "side": "dreamdimension:blocks/rajado_planks"
+    }
+}

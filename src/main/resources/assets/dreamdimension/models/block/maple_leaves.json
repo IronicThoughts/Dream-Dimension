@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "dreamdimension:blocks/maple_leaves"
+    }
+}

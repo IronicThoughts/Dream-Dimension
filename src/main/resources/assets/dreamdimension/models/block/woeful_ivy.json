@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "particle": "dreamdimension:blocks/woeful_ivy",
+        "cross": "dreamdimension:blocks/woeful_ivy"
+    }
+}

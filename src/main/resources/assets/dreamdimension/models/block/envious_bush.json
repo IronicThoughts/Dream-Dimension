@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "particle": "dreamdimension:blocks/envious_bush",
+        "cross": "dreamdimension:blocks/envious_bush"
+    }
+}

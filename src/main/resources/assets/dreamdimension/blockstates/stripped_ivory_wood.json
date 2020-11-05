@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "dreamdimension:block/stripped_ivory_wood" },
+        "axis=z":   { "model": "dreamdimension:block/stripped_ivory_wood", "x": 90 },
+        "axis=x":   { "model": "dreamdimension:block/stripped_ivory_wood", "x": 90, "y": 90 }
+    }
+}

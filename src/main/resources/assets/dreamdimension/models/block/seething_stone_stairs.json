@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "dreamdimension:blocks/seething_stone",
+        "top": "dreamdimension:blocks/seething_stone",
+        "side": "dreamdimension:blocks/seething_stone"
+    }
+}

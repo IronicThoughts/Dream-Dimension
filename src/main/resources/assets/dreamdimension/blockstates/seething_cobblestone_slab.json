@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "dreamdimension:block/seething_cobblestone_slab" },
+        "type=top": { "model": "dreamdimension:block/seething_cobblestone_slab_top" },
+        "type=double": { "model": "dreamdimension:block/seething_cobblestone" }
+    }
+}

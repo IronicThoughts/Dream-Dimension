@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "dreamdimension:blocks/rubber_planks",
+        "top": "dreamdimension:blocks/rubber_planks",
+        "side": "dreamdimension:blocks/rubber_planks"
+    }
+}

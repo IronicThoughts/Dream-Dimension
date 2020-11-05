@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "dreamdimension:rajado_door",
+    "dreamdimension:mahoe_door",
+    "dreamdimension:poplar_door",
+    "dreamdimension:ebony_door",
+    "dreamdimension:dead_door"
+  ]
+}

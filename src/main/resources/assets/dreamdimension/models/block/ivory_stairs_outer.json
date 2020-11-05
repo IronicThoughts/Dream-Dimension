@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "dreamdimension:blocks/ivory_planks",
+        "top": "dreamdimension:blocks/ivory_planks",
+        "side": "dreamdimension:blocks/ivory_planks"
+    }
+}

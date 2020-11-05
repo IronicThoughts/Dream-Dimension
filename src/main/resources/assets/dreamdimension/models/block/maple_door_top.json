@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "dreamdimension:blocks/maple_door_bottom",
+        "top": "dreamdimension:blocks/maple_door_top"
+    }
+}

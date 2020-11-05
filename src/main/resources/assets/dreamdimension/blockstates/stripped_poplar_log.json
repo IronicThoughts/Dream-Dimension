@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "dreamdimension:block/stripped_poplar_log" },
+        "axis=z":   { "model": "dreamdimension:block/stripped_poplar_log", "x": 90 },
+        "axis=x":   { "model": "dreamdimension:block/stripped_poplar_log", "x": 90, "y": 90 }
+    }
+}

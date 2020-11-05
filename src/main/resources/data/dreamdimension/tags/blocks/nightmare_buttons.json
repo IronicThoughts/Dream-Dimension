@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "dreamdimension:rajado_button",
+    "dreamdimension:mahoe_button",
+    "dreamdimension:poplar_button",
+    "dreamdimension:ebony_button",
+    "dreamdimension:dead_button"
+  ]
+}

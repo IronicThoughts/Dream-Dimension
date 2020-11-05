@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "dreamdimension:blocks/rajado_door_bottom",
+        "top": "dreamdimension:blocks/rajado_door_top"
+    }
+}

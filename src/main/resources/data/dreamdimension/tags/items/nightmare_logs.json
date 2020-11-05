@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#dreamdimension:rajado_logs",
+    "#dreamdimension:mahoe_logs",
+    "#dreamdimension:poplar_logs",
+    "#dreamdimension:ebony_logs",
+    "#dreamdimension:dead_logs"
+  ]
+}

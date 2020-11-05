@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "dreamdimension:block/ivory_pressure_plate" },
+        "powered=true": { "model": "dreamdimension:block/ivory_pressure_plate_down" }
+    }
+}

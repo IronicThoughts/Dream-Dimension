@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "dreamdimension:block/rajado_slab" },
+        "type=top": { "model": "dreamdimension:block/rajado_slab_top" },
+        "type=double": { "model": "dreamdimension:block/rajado_planks" }
+    }
+}

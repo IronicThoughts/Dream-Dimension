@@ -1,0 +1,293 @@
+{
+	// Miscellaneous Items
+	"item.dreamdimension.dream_stick": "Dream Stick",
+	"item.dreamdimension.nightmare_stick": "Nightmare Stick",
+	
+	// Ingots and Gems
+	"item.dreamdimension.shungite_ingot": "Shungite Ingot",
+	"item.dreamdimension.jet_ingot": "Jet Ingot",
+	"item.dreamdimension.chrysolite": "Chrysolite",
+	"item.dreamdimension.purple_apatite": "Purple Apatite",
+	"item.dreamdimension.white_onyx": "White Onyx",
+	"item.dreamdimension.topaz": "Topaz",
+	
+	// Tools and Armour
+	"item.dreamdimension.shungite_sword": "Shungite Sword",
+	"item.dreamdimension.jet_sword": "Jet Sword",
+	"item.dreamdimension.chrysolite_sword": "Chrysolite Sword",
+	"item.dreamdimension.purple_apatite_sword": "Purple Apatite Sword",
+	"item.dreamdimension.white_onyx_sword": "White Onyx Sword",
+	"item.dreamdimension.topaz_sword": "Topaz Sword",
+
+	"item.dreamdimension.shungite_pickaxe": "Shungite Pickaxe",
+	"item.dreamdimension.jet_pickaxe": "Jet Pickaxe",
+	"item.dreamdimension.chrysolite_pickaxe": "Chrysolite Pickaxe",
+	"item.dreamdimension.purple_apatite_pickaxe": "Purple Apatite Pickaxe",
+	"item.dreamdimension.white_onyx_pickaxe": "White Onyx Pickaxe",
+	"item.dreamdimension.topaz_pickaxe": "Topaz Pickaxe",
+
+	"item.dreamdimension.shungite_axe": "Shungite Axe",
+	"item.dreamdimension.jet_axe": "Jet Axe",
+	"item.dreamdimension.chrysolite_axe": "Chrysolite Axe",
+	"item.dreamdimension.purple_apatite_axe": "Purple Apatite Axe",
+	"item.dreamdimension.white_onyx_axe": "White Onyx Axe",
+	"item.dreamdimension.topaz_axe": "Topaz Axe",
+
+	"item.dreamdimension.shungite_shovel": "Shungite Shovel",
+	"item.dreamdimension.jet_shovel": "Jet Shovel",
+	"item.dreamdimension.chrysolite_shovel": "Chrysolite Shovel",
+	"item.dreamdimension.purple_apatite_shovel": "Purple Apatite Shovel",
+	"item.dreamdimension.white_onyx_shovel": "White Onyx Shovel",
+	"item.dreamdimension.topaz_shovel": "Topaz Shovel",
+
+	"item.dreamdimension.shungite_hoe": "Shungite Hoe",
+	"item.dreamdimension.jet_hoe": "Jet Hoe",
+	"item.dreamdimension.chrysolite_hoe": "Chrysolite Hoe",
+	"item.dreamdimension.purple_apatite_hoe": "Purple Apatite Hoe",
+	"item.dreamdimension.white_onyx_hoe": "White Onyx Hoe",
+	"item.dreamdimension.topaz_hoe": "Topaz Hoe",
+	
+
+	"item.dreamdimension.shungite_helmet": "Shungite Helmet",
+	"item.dreamdimension.jet_helmet": "Jet Helmet",
+	"item.dreamdimension.chrysolite_helmet": "Chrysolite Helmet",
+	"item.dreamdimension.purple_apatite_helmet": "Purple Apatite Helmet",
+	"item.dreamdimension.white_onyx_helmet": "White Onyx Helmet",
+	"item.dreamdimension.topaz_helmet": "Topaz Helmet",
+
+	"item.dreamdimension.shungite_chestplate": "Shungite Chestplate",
+	"item.dreamdimension.jet_chestplate": "Jet Chestplate",
+	"item.dreamdimension.chrysolite_chestplate": "Chrysolite Chestplate",
+	"item.dreamdimension.purple_apatite_chestplate": "Purple Apatite Chestplate",
+	"item.dreamdimension.white_onyx_chestplate": "White Onyx Chestplate",
+	"item.dreamdimension.topaz_chestplate": "Topaz Chestplate",
+
+	"item.dreamdimension.shungite_leggings": "Shungite Leggings",
+	"item.dreamdimension.jet_leggings": "Jet Leggings",
+	"item.dreamdimension.chrysolite_leggings": "Chrysolite Leggings",
+	"item.dreamdimension.purple_apatite_leggings": "Purple Apatite Leggings",
+	"item.dreamdimension.white_onyx_leggings": "White Onyx Leggings",
+	"item.dreamdimension.topaz_leggings": "Topaz Leggings",
+
+	"item.dreamdimension.shungite_boots": "Shungite Boots",
+	"item.dreamdimension.jet_boots": "Jet Boots",
+	"item.dreamdimension.chrysolite_boots": "Chrysolite Boots",
+	"item.dreamdimension.purple_apatite_boots": "Purple Apatite Boots",
+	"item.dreamdimension.white_onyx_boots": "White Onyx Boots",
+	"item.dreamdimension.topaz_boots": "Topaz Boots",
+	
+	// Terrain Blocks
+	"block.dreamdimension.seething_grass_block": "Seething Grass",
+	
+	"block.dreamdimension.seething_dirt": "Seething Dirt",
+	
+	"block.dreamdimension.seething_stone": "Seething Stone",
+	
+	"block.dreamdimension.seething_cobblestone": "Seething Cobblestone",
+	
+	// Ores
+	"block.dreamdimension.shungite_ore": "Shungite Ore",
+	"block.dreamdimension.jet_ore": "Jet Ore",
+	"block.dreamdimension.purple_apatite_ore": "Purple Apatite Ore",
+	"block.dreamdimension.chrysolite_ore": "Chrysolite Ore",
+	"block.dreamdimension.white_onyx_ore": "White Onyx Ore",
+	"block.dreamdimension.topaz_ore": "Topaz Ore",
+	
+	// Gem Blocks
+	"block.dreamdimension.shungite_block": "Block Of Shungite",
+	"block.dreamdimension.jet_block": "Block Of Jet",
+	"block.dreamdimension.chrysolite_block": "Block Of Chrysolite",
+	"block.dreamdimension.purple_apatite_block": "Block Of Purple Apatite",
+	"block.dreamdimension.white_onyx_block": "Block Of White Onyx",
+	"block.dreamdimension.topaz_block": "Block Of Topaz",
+	
+	// Logs, Wood, and Stripped Variants
+	"block.dreamdimension.rajado_log": "Rajado Log",
+	"block.dreamdimension.mahoe_log": "Mahoe Log",
+	"block.dreamdimension.ivory_log": "Ivory Log",
+	"block.dreamdimension.maple_log": "Maple Log",
+	"block.dreamdimension.poplar_log": "Poplar Log",
+	"block.dreamdimension.ebony_log": "Ebony Log",
+	"block.dreamdimension.dead_log": "Dead Log",
+	"block.dreamdimension.rubber_log": "Rubber Log",
+	
+	"block.dreamdimension.rajado_wood": "Rajado Wood",
+	"block.dreamdimension.mahoe_wood": "Mahoe Wood",
+	"block.dreamdimension.ivory_wood": "Ivory Wood",
+	"block.dreamdimension.maple_wood": "Maple Wood",
+	"block.dreamdimension.poplar_wood": "Poplar Wood",
+	"block.dreamdimension.ebony_wood": "Ebony Wood",
+	"block.dreamdimension.dead_wood": "Dead Wood",
+	"block.dreamdimension.rubber_wood": "Rubber Wood",
+	
+	"block.dreamdimension.stripped_rajado_log": "Stripped Rajado Log",
+	"block.dreamdimension.stripped_mahoe_log": "Stripped Mahoe Log",
+	"block.dreamdimension.stripped_ivory_log": "Stripped Ivory Log",
+	"block.dreamdimension.stripped_maple_log": "Stripped Maple Log",
+	"block.dreamdimension.stripped_poplar_log": "Stripped Poplar Log",
+	"block.dreamdimension.stripped_ebony_log": "Stripped Ebony Log",
+	"block.dreamdimension.stripped_dead_log": "Stripped Dead Log",
+	"block.dreamdimension.stripped_rubber_log": "Stripped Rubber Log",
+	
+	"block.dreamdimension.stripped_rajado_wood": "Stripped Rajado Wood",
+	"block.dreamdimension.stripped_mahoe_wood": "Stripped Mahoe Wood",
+	"block.dreamdimension.stripped_ivory_wood": "Stripped Ivory Wood",
+	"block.dreamdimension.stripped_maple_wood": "Stripped Maple Wood",
+	"block.dreamdimension.stripped_poplar_wood": "Stripped Poplar Wood",
+	"block.dreamdimension.stripped_ebony_wood": "Stripped Ebony Wood",
+	"block.dreamdimension.stripped_dead_wood": "Stripped Dead Wood",
+	"block.dreamdimension.stripped_rubber_wood": "Stripped Rubber Wood",
+	
+	// Leaves and Saplings
+	"block.dreamdimension.rajado_leaves": "Rajado Leaves",
+	"block.dreamdimension.mahoe_leaves": "Mahoe Leaves",
+	"block.dreamdimension.ivory_leaves": "Ivory Leaves",
+	"block.dreamdimension.maple_leaves": "Maple Leaves",
+	"block.dreamdimension.poplar_leaves": "Poplar Leaves",
+	"block.dreamdimension.ebony_leaves": "Ebony Leaves",
+	"block.dreamdimension.dead_leaves": "Dead Leaves",
+	"block.dreamdimension.rubber_leaves": "Rubber Leaves",
+
+	"block.dreamdimension.rajado_sapling": "Rajado Sapling",
+	"block.dreamdimension.mahoe_sapling": "Mahoe Sapling",
+	"block.dreamdimension.ivory_sapling": "Ivory Sapling",
+	"block.dreamdimension.maple_sapling": "Maple Sapling",
+	"block.dreamdimension.poplar_sapling": "Poplar Sapling",
+	"block.dreamdimension.ebony_sapling": "Ebony Sapling",
+	"block.dreamdimension.dead_sapling": "Dead Sapling",
+	"block.dreamdimension.rubber_sapling": "Rubber Sapling",
+	
+	// Planks
+	"block.dreamdimension.rajado_planks": "Rajado Planks",
+	"block.dreamdimension.mahoe_planks": "Mahoe Planks",
+	"block.dreamdimension.ivory_planks": "Ivory Planks",
+	"block.dreamdimension.maple_planks": "Maple Planks",
+	"block.dreamdimension.poplar_planks": "Poplar Planks",
+	"block.dreamdimension.ebony_planks": "Ebony Planks",
+	"block.dreamdimension.dead_planks": "Dead Planks",
+	"block.dreamdimension.rubber_planks": "Rubber Planks",
+	
+	// Stairs
+	"block.dreamdimension.rajado_stairs": "Rajado Stairs",
+	"block.dreamdimension.mahoe_stairs": "Mahoe Stairs",
+	"block.dreamdimension.ivory_stairs": "Ivory Stairs",
+	"block.dreamdimension.maple_stairs": "Maple Stairs",
+	"block.dreamdimension.poplar_stairs": "Poplar Stairs",
+	"block.dreamdimension.ebony_stairs": "Ebony Stairs",
+	"block.dreamdimension.dead_stairs": "Dead Stairs",
+	"block.dreamdimension.rubber_stairs": "Rubber Stairs",
+	
+	"block.dreamdimension.seething_stone_stairs": "Seething Stone Stairs",
+	
+	"block.dreamdimension.seething_cobblestone_stairs": "Seething Cobblestone Stairs",
+	
+	// Slabs
+	"block.dreamdimension.rajado_slab": "Rajado Slab",
+	"block.dreamdimension.mahoe_slab": "Mahoe Slab",
+	"block.dreamdimension.ivory_slab": "Ivory Slab",
+	"block.dreamdimension.maple_slab": "Maple Slab",
+	"block.dreamdimension.poplar_slab": "Poplar Slab",
+	"block.dreamdimension.ebony_slab": "Ebony Slab",
+	"block.dreamdimension.dead_slab": "Dead Slab",
+	"block.dreamdimension.rubber_slab": "Rubber Slab",
+	
+	"block.dreamdimension.seething_stone_slab": "Seething Stone Slab",
+	
+	"block.dreamdimension.seething_cobblestone_slab": "Seething Cobblestone Slab",
+	
+	// Fences and Walls
+	"block.dreamdimension.rajado_fence": "Rajado Fence",
+	"block.dreamdimension.mahoe_fence": "Mahoe Fence",
+	"block.dreamdimension.ivory_fence": "Ivory Fence",
+	"block.dreamdimension.maple_fence": "Maple Fence",
+	"block.dreamdimension.poplar_fence": "Poplar Fence",
+	"block.dreamdimension.ebony_fence": "Ebony Fence",
+	"block.dreamdimension.dead_fence": "Dead Fence",
+	"block.dreamdimension.rubber_fence": "Rubber Fence",
+	
+	"block.dreamdimension.seething_cobblestone_wall": "Seething Cobblestone Wall",
+	
+	// Fence Gates
+	"block.dreamdimension.rajado_fence_gate": "Rajado Fence Gate",
+	"block.dreamdimension.mahoe_fence_gate": "Mahoe Fence Gate",
+	"block.dreamdimension.ivory_fence_gate": "Ivory Fence Gate",
+	"block.dreamdimension.maple_fence_gate": "Maple Fence Gate",
+	"block.dreamdimension.poplar_fence_gate": "Poplar Fence Gate",
+	"block.dreamdimension.ebony_fence_gate": "Ebony Fence Gate",
+	"block.dreamdimension.dead_fence_gate": "Dead Fence Gate",
+	"block.dreamdimension.rubber_fence_gate": "Rubber Fence Gate",
+	
+	// Doors and Trapdoors
+	"block.dreamdimension.rajado_door": "Rajado Door",
+	"block.dreamdimension.mahoe_door": "Mahoe Door",
+	"block.dreamdimension.ivory_door": "Ivory Door",
+	"block.dreamdimension.maple_door": "Maple Door",
+	"block.dreamdimension.poplar_door": "Poplar Door",
+	"block.dreamdimension.ebony_door": "Ebony Door",
+	"block.dreamdimension.dead_door": "Dead Door",
+	"block.dreamdimension.rubber_door": "Rubber Door",
+	
+	// Buttons and Pressure Plates
+	"block.dreamdimension.rajado_button": "Rajado Button",
+	"block.dreamdimension.mahoe_button": "Mahoe Button",
+	"block.dreamdimension.ivory_button": "Ivory Button",
+	"block.dreamdimension.maple_button": "Maple Button",
+	"block.dreamdimension.poplar_button": "Poplar Button",
+	"block.dreamdimension.ebony_button": "Ebony Button",
+	"block.dreamdimension.dead_button": "Dead Button",
+	"block.dreamdimension.rubber_button": "Rubber Button",
+	
+	"block.dreamdimension.seething_stone_button": "Seething Stone Button",
+	
+	"block.dreamdimension.rajado_pressure_plate": "Rajado Pressure Plate",
+	"block.dreamdimension.mahoe_pressure_plate": "Mahoe Pressure Plate",
+	"block.dreamdimension.ivory_pressure_plate": "Ivory Pressure Plate",
+	"block.dreamdimension.maple_pressure_plate": "Maple Pressure Plate",
+	"block.dreamdimension.poplar_pressure_plate": "Poplar Pressure Plate",
+	"block.dreamdimension.ebony_pressure_plate": "Ebony Pressure Plate",
+	"block.dreamdimension.dead_pressure_plate": "Dead Pressure Plate",
+	"block.dreamdimension.rubber_pressure_plate": "Rubber Pressure Plate",
+	
+	"block.dreamdimension.seething_stone_pressure_plate": "Seething Stone Pressure Plate",
+	
+	// Ladders
+	"block.dreamdimension.dream_ladder": "Dream Ladder",
+	
+	// Torches
+	"block.dreamdimension.dream_torch": "Dream Torch",
+	"block.dreamdimension.nightmare_torch": "Nightmare Torch",
+	
+	"block.dreamdimension.wall_dream_torch": "Wall Dream Torch",
+	"block.dreamdimension.wall_nightmare_torch": "Wall Nightmare Torch",
+	
+	// Flowers and Plants
+	"block.dreamdimension.seething_plant": "Seething Plant",
+	"block.dreamdimension.torpid_grass": "Torpid Grass",
+	
+	"block.dreamdimension.woeful_ivy": "Woeful Ivy",
+	"block.dreamdimension.weeping_wisteria": "Weeping Wisteria",
+	"block.dreamdimension.melancholy_vine": "Melancholy Vine",
+	"block.dreamdimension.melancholy_grass": "Melancholy Grass",
+	
+	"block.dreamdimension.lustful_lily": "Lustful Lily",
+	"block.dreamdimension.lustful_ivy": "Lustful Ivy",
+
+	"block.dreamdimension.joyful_grass": "Joyful Grass",
+	"block.dreamdimension.joyful_vine": "Joyful Vine",
+
+	"block.dreamdimension.envious_vine": "Envious Vine",
+	"block.dreamdimension.envious_bush": "Envious Bush",
+	
+	// Biomes
+	"biome.dreamdimension.seething_woodland": "Seething Woodland",
+	"biome.dreamdimension.melancholy_meadow": "Melancholy Meadow",
+	"biome.dreamdimension.lustful_flatland": "Lustful Flatland",
+	"biome.dreamdimension.joyful_plains": "Joyful Plains",
+	"biome.dreamdimension.envious_rainforest": "Envious Rainforest",
+	"biome.dreamdimension.dreadful_upland": "Dreaful Upland",
+	"biome.dreamdimension.nightmare_forest":"Nightmare Forest",
+	"biome.dreamdimension.enlightened_woods":"Enlightened Woods",
+
+	// Creative Tab
+	"itemGroup.Dream Dimension": "Dream Dimension"
+}
