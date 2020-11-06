@@ -34,7 +34,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class DreamDimension {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String MOD_ID = "dreamdimension";
-	public static DreamDimension instance;
+	public static DreamDimension dream;
 	public static final ResourceLocation DREAM_DIMENSION_TYPE = new ResourceLocation(MOD_ID, "dream");
 
 	public DreamDimension() {
@@ -46,7 +46,7 @@ public class DreamDimension {
 		BlockInit.BLOCKS.register(modEventBus);
 		BiomeInit.BIOMES.register(modEventBus);
 		DimensionInit.MOD_DIMENSIONS.register(modEventBus);
-		instance = this;
+		dream = this;
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -81,7 +81,6 @@ public class DreamDimension {
 
 	@SubscribeEvent
 	public void onServerStarting(FMLServerStartingEvent event) {
-
 	}
 
 	public static class DreamItemGroup extends ItemGroup {
@@ -93,11 +92,7 @@ public class DreamDimension {
 
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(ItemInitOld.SHUNGITE_SWORD, hasSearchBar(true));
-		}
-
-		private int hasSearchBar(boolean b) {
-			return 1;
+			return new ItemStack(ItemInitOld.DREAM_STICK);
 		}
 	}
 }

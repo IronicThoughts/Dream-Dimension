@@ -13,7 +13,7 @@ import net.minecraft.world.gen.ChunkGenerator;
 public class DreamDimension extends Dimension {
 
 	public DreamDimension(World world, DimensionType type) {
-		super(world, type, 0.0f);
+		super(world, type, 0.0F);
 	}
 
 	@Override
@@ -23,15 +23,13 @@ public class DreamDimension extends Dimension {
 				new DreamGenSettings());
 	} 
 
-	@Override
-	public BlockPos findSpawn(ChunkPos chunkPosIn, boolean checkValid) {
-		return null;
-	}
-
-	@Override
-	public BlockPos findSpawn(int posX, int posZ, boolean checkValid) {
-		return null;
-	}
+	 public BlockPos getSpawningBlockInChunk(ChunkPos chunkPos, boolean checkMobSpawnValidity) {
+	        return null;
+	    }
+	 
+	    public BlockPos getTopSpawningBlockPosition(int x, int z, boolean checkMobSpawnValidity) {
+	        return null;
+	    }
 
 	@Override
 	public float calculateCelestialAngle(long worldTime, float partialTicks) {
@@ -60,7 +58,7 @@ public class DreamDimension extends Dimension {
 
 	@Override
 	public boolean canRespawnHere() {
-		return true;
+		return false;
 	}
 
 	@Override
@@ -82,6 +80,14 @@ public class DreamDimension extends Dimension {
 	public int getActualHeight() {
 		return 256;
 	}
-	
-	
+
+	@Override
+	public BlockPos findSpawn(ChunkPos chunkPosIn, boolean checkValid) {
+		return null;
+	}
+
+	@Override
+	public BlockPos findSpawn(int posX, int posZ, boolean checkValid) {
+		return null;
+	}
 }

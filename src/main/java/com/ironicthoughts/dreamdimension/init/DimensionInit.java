@@ -11,5 +11,5 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class DimensionInit {
 	public static final DeferredRegister<ModDimension> MOD_DIMENSIONS = new DeferredRegister<>(ForgeRegistries.MOD_DIMENSIONS, DreamDimension.MOD_ID);
 	
-	public static final RegistryObject<ModDimension> DREAM_DIMENSION = MOD_DIMENSIONS.register("dream", () -> new DreamModDimension());
+	public static final RegistryObject<ModDimension> DREAM_DIMENSION = MOD_DIMENSIONS.register("dream_dimension", () -> new DreamModDimension());
 }
