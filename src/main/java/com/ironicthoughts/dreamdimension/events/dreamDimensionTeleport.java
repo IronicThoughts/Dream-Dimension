@@ -17,6 +17,6 @@ public class dreamDimensionTeleport {
 	public static void dreamDimensionTeleport(PlayerSleepInBedEvent event) {
 		DreamDimension.LOGGER.info("Sleep Event Fired!");
 		PlayerEntity playerEntity = event.getPlayer();
-		Entity entity = playerEntity.changeDimension(DimensionType.THE_END);
+		Entity entity = playerEntity.changeDimension(DimensionType.OVERWORLD);
 	}
 }
