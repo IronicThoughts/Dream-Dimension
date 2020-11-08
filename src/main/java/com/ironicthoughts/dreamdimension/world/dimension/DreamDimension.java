@@ -11,7 +11,7 @@ import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.gen.ChunkGenerator;
 
 public class DreamDimension extends Dimension {
-
+    
 	public DreamDimension(World world, DimensionType type) {
 		super(world, type, 0.0F);
 	}
@@ -27,9 +27,9 @@ public class DreamDimension extends Dimension {
 	        return null;
 	    }
 	 
-	    public BlockPos getTopSpawningBlockPosition(int x, int z, boolean checkMobSpawnValidity) {
-	        return null;
-	    }
+	 public BlockPos getTopSpawningBlockPosition(int x, int z, boolean checkMobSpawnValidity) {
+		 return null;
+	 	}
 
 	@Override
 	public float calculateCelestialAngle(long worldTime, float partialTicks) {
@@ -68,7 +68,7 @@ public class DreamDimension extends Dimension {
 
 	@Override
 	public SleepResult canSleepAt(PlayerEntity player, BlockPos pos) {
-		return SleepResult.ALLOW;
+		return SleepResult.DENY;
 	}
 
 	@Override

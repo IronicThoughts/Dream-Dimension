@@ -11,12 +11,19 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
 @Mod.EventBusSubscriber(modid = DreamDimension.MOD_ID, bus = Bus.FORGE)
-public class dreamDimensionTeleport {
-	
+public class dreamTeleport extends DreamDimension {
+
 	@SubscribeEvent
-	public static void dreamDimensionTeleport(PlayerSleepInBedEvent event) {
-		DreamDimension.LOGGER.info("Sleep Event Fired!");
-		PlayerEntity playerEntity = event.getPlayer();
-		Entity entity = playerEntity.changeDimension(DimensionType.OVERWORLD);
+	public static void isDreaming(PlayerSleepInBedEvent event) {
+		boolean isDreaming = Math.random() < 0.5;
+		if (isDreaming == true) {
+			PlayerEntity playerEntity = event.getPlayer();
+			Entity entity = playerEntity.changeDimension(DimensionType.byName(DREAM));
+			playerEntity.getEntityWorld().setDayTime(1000L);
+
+			DreamDimension.LOGGER.info("Sleep Event Triggered!");
+		} else {
+			return;
+		}
 	}
 }

@@ -76,6 +76,9 @@
 	"item.dreamdimension.white_onyx_boots": "White Onyx Boots",
 	"item.dreamdimension.topaz_boots": "Topaz Boots",
 	
+	// Dream Altar Blocks
+	"block.dreamdimension.dream_altar_pillar": "Dream Altar Pillar",
+	
 	// Terrain Blocks
 	"block.dreamdimension.seething_grass_block": "Seething Grass",
 	
@@ -260,6 +263,9 @@
 	
 	"block.dreamdimension.wall_dream_torch": "Wall Dream Torch",
 	"block.dreamdimension.wall_nightmare_torch": "Wall Nightmare Torch",
+	
+	// Portal
+	"block.dreamdimension.unnamed_bed": "Unnamed Bed",
 	
 	// Flowers and Plants
 	"block.dreamdimension.seething_plant": "Seething Plant",

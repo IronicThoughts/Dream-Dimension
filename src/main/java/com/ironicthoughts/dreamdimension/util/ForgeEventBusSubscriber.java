@@ -15,9 +15,8 @@ public class ForgeEventBusSubscriber {
 
 	@SubscribeEvent
 	public static void registerDimensions(final RegisterDimensionsEvent event) {
-		if (DimensionType.byName(DreamDimension.DREAM_DIMENSION_TYPE) == null) {
-			DimensionManager.registerDimension(DreamDimension.DREAM_DIMENSION_TYPE, DimensionInit.DREAM_DIMENSION.get(), null,
-					true);
+		if (DimensionType.byName(DreamDimension.DREAM) == null) {
+			DimensionManager.registerDimension(DreamDimension.DREAM, DimensionInit.DREAM_DIMENSION.get(), null, true);
 		}
 		DreamDimension.LOGGER.info("Dimensions Registered!");
 	}

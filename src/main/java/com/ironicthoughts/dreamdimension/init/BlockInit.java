@@ -1,6 +1,7 @@
 package com.ironicthoughts.dreamdimension.init;
 
 import com.ironicthoughts.dreamdimension.DreamDimension;
+import com.ironicthoughts.dreamdimension.objects.blocks.DreamAltarPillarBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModDoorBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModLadderBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModPressurePlateBlock;
@@ -39,6 +40,9 @@ public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS,
 			DreamDimension.MOD_ID);
 
+	// Portal Block
+	public static final RegistryObject<Block> DREAM_ALTAR_PILLAR = BLOCKS.register("dream_altar_pillar", () -> new DreamAltarPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.GRAY).hardnessAndResistance(35F, 1200F)));
+		
 	// Gem Blocks
 	public static final RegistryObject<Block> SHUNGITE_BLOCK = BLOCKS.register("shungite_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<Block> JET_BLOCK = BLOCKS.register("jet_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
@@ -222,7 +226,7 @@ public class BlockInit {
 	// Ladders
 	public static final RegistryObject<ModLadderBlock> DREAM_LADDER = BLOCKS.register("dream_ladder", () -> new ModLadderBlock(Block.Properties.from(Blocks.LADDER)));
 	public static final RegistryObject<ModLadderBlock> NIGHTMARE_LADDER = BLOCKS.register("nightmare_ladder", () -> new ModLadderBlock(Block.Properties.from(Blocks.LADDER)));
-	
+		
 	/* Plants and Flowers
 	public static final RegistryObject<ModTallGrassBlock> TORPID_GRASS = BLOCKS.register("torpid_grass", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.RED_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
 	public static final RegistryObject<ModFlowerBlock> SEETHING_PLANT = BLOCKS.register("seething_plant", () -> new ModFlowerBlock(Effects.STRENGTH, 7, Block.Properties.create(Material.PLANTS, MaterialColor.RED_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0F).sound(SoundType.PLANT)));

@@ -35,7 +35,7 @@ public class DreamDimension {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String MOD_ID = "dreamdimension";
 	public static DreamDimension dream;
-	public static final ResourceLocation DREAM_DIMENSION_TYPE = new ResourceLocation(MOD_ID, "dream");
+	public static final ResourceLocation DREAM = new ResourceLocation(MOD_ID, "dream");
 
 	public DreamDimension() {
 		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

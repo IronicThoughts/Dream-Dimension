@@ -70,6 +70,5 @@ public class ClientEventBusSubscriber {
 		// Ladders
 		RenderTypeLookup.setRenderLayer(BlockInit.DREAM_LADDER.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.NIGHTMARE_LADDER.get(), RenderType.getCutout());
-	
 	}
 }
