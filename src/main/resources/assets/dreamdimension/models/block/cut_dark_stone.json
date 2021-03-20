@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "dreamdimension:blocks/cut_dark_stone_top",
+        "side": "dreamdimension:blocks/cut_dark_stone"
+    }
+}

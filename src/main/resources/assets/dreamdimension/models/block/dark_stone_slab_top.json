@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "dreamdimension:blocks/dark_stone",
+        "top": "dreamdimension:blocks/dark_stone",
+        "side": "dreamdimension:blocks/dark_stone"
+    }
+}

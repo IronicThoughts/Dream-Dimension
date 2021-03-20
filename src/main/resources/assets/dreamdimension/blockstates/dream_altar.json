@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=north,powered=false": { "model": "dreamdimension:block/dream_altar" },
+        "facing=south,powered=false": { "model": "dreamdimension:block/dream_altar", "y": 180 },
+        "facing=west,powered=false":  { "model": "dreamdimension:block/dream_altar", "y": 270 },
+        "facing=east,powered=false":  { "model": "dreamdimension:block/dream_altar", "y": 90 },
+    	"facing=north,powered=true": { "model": "dreamdimension:block/dream_altar_on" },
+        "facing=south,powered=true": { "model": "dreamdimension:block/dream_altar_on", "y": 180 },
+        "facing=west,powered=true":  { "model": "dreamdimension:block/dream_altar_on", "y": 270 },
+        "facing=east,powered=true":  { "model": "dreamdimension:block/dream_altar_on", "y": 90 }
+}
+}

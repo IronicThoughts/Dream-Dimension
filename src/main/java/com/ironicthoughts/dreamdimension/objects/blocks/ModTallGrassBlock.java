@@ -5,6 +5,7 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.IGrowable;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -42,5 +43,9 @@ public class ModTallGrassBlock extends ModBushBlock implements IGrowable, IShear
 
 	public Block.OffsetType getOffsetType() {
 		return Block.OffsetType.XYZ;
+	}
+	
+	public boolean isReplaceable(BlockState state, Fluid fluid) {
+		return true;
 	}
 }

@@ -12,15 +12,20 @@ import net.minecraft.item.HoeItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.common.capabilities.CapabilityProvider;
+import net.minecraftforge.common.extensions.IForgeItemStack;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -29,12 +34,13 @@ import net.minecraftforge.registries.ObjectHolder;
 
 @Mod.EventBusSubscriber(modid = DreamDimension.MOD_ID, bus = Bus.MOD)
 @ObjectHolder(DreamDimension.MOD_ID)
-public class ItemInitOld {
+public class ItemInitOld extends CapabilityProvider<ItemStack> implements IForgeItemStack {
 
-	// Sticks
+	// Sticks and Dust
 	public static final Item DREAM_STICK = null;
 	public static final Item NIGHTMARE_STICK = null;
 
+	public static final Item DREAM_DUST = null;
 	// Ingots and Gems
 	public static final Item SHUNGITE_INGOT = null;
 	public static final Item JET_INGOT = null;
@@ -114,6 +120,8 @@ public class ItemInitOld {
 		// Sticks
 		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("dream_stick"));
 		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("nightmare_stick"));
+
+		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM).rarity(Rarity.RARE)).setRegistryName("dream_dust"));
 
 		// Ingots and Gems
 		event.getRegistry().register(new Item(new Item.Properties().group(DreamItemGroup.DREAM)).setRegistryName("shungite_ingot"));
@@ -336,5 +344,13 @@ public class ItemInitOld {
 		public float getToughness() {
 			return this.toughness;
 		}
+	}
+
+	protected ItemInitOld(Class<ItemStack> baseClass) {
+		super(baseClass);
+	}
+	
+	@Override
+	public void deserializeNBT(CompoundNBT nbt) {		
 	}
 }

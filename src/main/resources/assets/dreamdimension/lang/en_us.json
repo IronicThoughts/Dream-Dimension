@@ -3,6 +3,8 @@
 	"item.dreamdimension.dream_stick": "Dream Stick",
 	"item.dreamdimension.nightmare_stick": "Nightmare Stick",
 	
+	"item.dreamdimension.dream_dust": "Dream Dust",
+	
 	// Ingots and Gems
 	"item.dreamdimension.shungite_ingot": "Shungite Ingot",
 	"item.dreamdimension.jet_ingot": "Jet Ingot",
@@ -77,13 +79,21 @@
 	"item.dreamdimension.topaz_boots": "Topaz Boots",
 	
 	// Dream Altar Blocks
+	"block.dreamdimension.dark_stone": "Dark Stone",
+	"block.dreamdimension.chiseled_dark_stone": "Chiseled Dark Stone",
+	"block.dreamdimension.cut_dark_stone": "Cut Dark Stone",
+	"block.dreamdimension.dark_stone_stairs": "Dark Stone Stairs",
+	"block.dreamdimension.dark_stone_slab": "Dark Stone Slab",
 	"block.dreamdimension.dream_altar_pillar": "Dream Altar Pillar",
+	"block.dreamdimension.dream_altar": "Dream Altar",
+	"block.dreamdimension.dream_crystal": "Dream Crystal",
 	
 	// Terrain Blocks
 	"block.dreamdimension.seething_grass_block": "Seething Grass",
 	
 	"block.dreamdimension.seething_dirt": "Seething Dirt",
 	
+	"block.dreamdimension.dark_stone": "Dark Stone",
 	"block.dreamdimension.seething_stone": "Seething Stone",
 	
 	"block.dreamdimension.seething_cobblestone": "Seething Cobblestone",

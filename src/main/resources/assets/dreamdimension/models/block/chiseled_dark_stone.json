@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "dreamdimension:blocks/chiseled_dark_stone"
+    }
+}

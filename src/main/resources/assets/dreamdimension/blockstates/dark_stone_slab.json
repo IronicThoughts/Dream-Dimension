@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "dreamdimension:block/dark_stone_slab" },
+        "type=top": { "model": "dreamdimension:block/dark_stone_slab_top" },
+        "type=double": { "model": "dreamdimension:block/dark_stone_planks" }
+    }
+}

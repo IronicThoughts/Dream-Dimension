@@ -17,28 +17,26 @@ public class ClientEventBusSubscriber {
 	@SubscribeEvent
 	public static void clientSetup(FMLClientSetupEvent event) {
 		
-		/*
 		// Grass Blocks
-		RenderTypeLookup.setRenderLayer(BlockInit.SEETHING_GRASS_BLOCK.get(), RenderType.getCutout());
+		//RenderTypeLookup.setRenderLayer(BlockInit.SEETHING_GRASS_BLOCK.get(), RenderType.getCutout());
 		
 		// Plants and Flowers
-		RenderTypeLookup.setRenderLayer(BlockInit.SEETHING_PLANT.get(), RenderType.getCutout());
+		//RenderTypeLookup.setRenderLayer(BlockInit.SEETHING_PLANT.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.TORPID_GRASS.get(), RenderType.getCutout());
 
 		RenderTypeLookup.setRenderLayer(BlockInit.MELANCHOLY_GRASS.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.MELANCHOLY_VINE.get(), RenderType.getCutout());
-		RenderTypeLookup.setRenderLayer(BlockInit.WOEFUL_IVY.get(), RenderType.getCutout());
-		RenderTypeLookup.setRenderLayer(BlockInit.WEEPING_WISTERIA.get(), RenderType.getCutout());
+		//RenderTypeLookup.setRenderLayer(BlockInit.WOEFUL_IVY.get(), RenderType.getCutout());
+		//RenderTypeLookup.setRenderLayer(BlockInit.WEEPING_WISTERIA.get(), RenderType.getCutout());
 
 		RenderTypeLookup.setRenderLayer(BlockInit.LUSTFUL_IVY.get(), RenderType.getCutout());
-		RenderTypeLookup.setRenderLayer(BlockInit.LUSTFUL_LILY.get(), RenderType.getCutout());
+		//RenderTypeLookup.setRenderLayer(BlockInit.LUSTFUL_LILY.get(), RenderType.getCutout());
 
 		RenderTypeLookup.setRenderLayer(BlockInit.JOYFUL_GRASS.get(), RenderType.getCutout());
-		RenderTypeLookup.setRenderLayer(BlockInit.JOYFUL_VINE.get(), RenderType.getCutout());
+		//RenderTypeLookup.setRenderLayer(BlockInit.JOYFUL_VINE.get(), RenderType.getCutout());
 
 		RenderTypeLookup.setRenderLayer(BlockInit.ENVIOUS_VINE.get(), RenderType.getCutout());
-		RenderTypeLookup.setRenderLayer(BlockInit.ENVIOUS_BUSH.get(), RenderType.getCutout());
-		*/
+		//RenderTypeLookup.setRenderLayer(BlockInit.ENVIOUS_BUSH.get(), RenderType.getCutout());
 		
 		// Saplings
 		RenderTypeLookup.setRenderLayer(BlockInit.RAJADO_SAPLING.get(), RenderType.getCutout());

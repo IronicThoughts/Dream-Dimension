@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "dreamdimension:block/dream_crystal" },
+        "powered=true": { "model": "dreamdimension:block/dream_crystal_on" }
+    }
+}

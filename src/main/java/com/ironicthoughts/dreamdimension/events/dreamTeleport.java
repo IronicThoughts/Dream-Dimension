@@ -15,15 +15,15 @@ public class dreamTeleport extends DreamDimension {
 
 	@SubscribeEvent
 	public static void isDreaming(PlayerSleepInBedEvent event) {
-		boolean isDreaming = Math.random() < 0.5;
+		boolean isDreaming = Math.random() < 0.04;
 		if (isDreaming == true) {
 			PlayerEntity playerEntity = event.getPlayer();
 			Entity entity = playerEntity.changeDimension(DimensionType.byName(DREAM));
 			playerEntity.getEntityWorld().setDayTime(1000L);
-
+			
 			DreamDimension.LOGGER.info("Sleep Event Triggered!");
-		} else {
-			return;
+			} else {
+				return;
+			}
 		}
 	}
-}

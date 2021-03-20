@@ -1,11 +1,14 @@
 package com.ironicthoughts.dreamdimension.init;
 
 import com.ironicthoughts.dreamdimension.DreamDimension;
+import com.ironicthoughts.dreamdimension.objects.blocks.DreamAltarBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.DreamAltarPillarBlock;
+import com.ironicthoughts.dreamdimension.objects.blocks.DreamCrystal;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModDoorBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModLadderBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModPressurePlateBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModSaplingBlock;
+import com.ironicthoughts.dreamdimension.objects.blocks.ModTallGrassBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModTorchBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModWallTorchBlock;
 import com.ironicthoughts.dreamdimension.objects.blocks.ModWoodButtonBlock;
@@ -36,13 +39,18 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class BlockInit {
+	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, DreamDimension.MOD_ID);
 
-	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS,
-			DreamDimension.MOD_ID);
-
-	// Portal Block
-	public static final RegistryObject<Block> DREAM_ALTAR_PILLAR = BLOCKS.register("dream_altar_pillar", () -> new DreamAltarPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.GRAY).hardnessAndResistance(35F, 1200F)));
-		
+	// Dream Altar Blocks
+	public static final RegistryObject<Block> DARK_STONE = BLOCKS.register("dark_stone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.GRAY).hardnessAndResistance(2.0F, 10.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> CHISELED_DARK_STONE = BLOCKS.register("chiseled_dark_stone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.GRAY).hardnessAndResistance(2.0F, 10.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> CUT_DARK_STONE = BLOCKS.register("cut_dark_stone", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.GRAY).hardnessAndResistance(2.0F, 10.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<StairsBlock> DARK_STONE_STAIRS = BLOCKS.register("dark_stone_stairs", () -> new StairsBlock(() -> BlockInit.DARK_STONE.get().getDefaultState(), Block.Properties.from(BlockInit.DARK_STONE.get())));
+	public static final RegistryObject<SlabBlock> DARK_STONE_SLAB = BLOCKS.register("dark_stone_slab", () -> new SlabBlock(Block.Properties.from(BlockInit.DARK_STONE.get())));
+	public static final RegistryObject<DreamAltarPillarBlock> DREAM_ALTAR_PILLAR = BLOCKS.register("dream_altar_pillar", () -> new DreamAltarPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.GRAY).hardnessAndResistance(35F, 1200F).lightValue(5).sound(SoundType.STONE)));
+	public static final RegistryObject<DreamAltarBlock> DREAM_ALTAR = BLOCKS.register("dream_altar", () -> new DreamAltarBlock(Block.Properties.create(Material.ROCK, MaterialColor.GRAY).hardnessAndResistance(3.0F).lightValue(8).sound(SoundType.STONE)));
+	public static final RegistryObject<DreamCrystal> DREAM_CRYSTAL  = BLOCKS.register("dream_crystal", () -> new DreamCrystal(Block.Properties.create(Material.GLASS, MaterialColor.PINK).hardnessAndResistance(0.3F).lightValue(10).sound(SoundType.GLASS)));
+	
 	// Gem Blocks
 	public static final RegistryObject<Block> SHUNGITE_BLOCK = BLOCKS.register("shungite_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
 	public static final RegistryObject<Block> JET_BLOCK = BLOCKS.register("jet_block", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(3.0F).sound(SoundType.STONE)));
@@ -226,23 +234,22 @@ public class BlockInit {
 	// Ladders
 	public static final RegistryObject<ModLadderBlock> DREAM_LADDER = BLOCKS.register("dream_ladder", () -> new ModLadderBlock(Block.Properties.from(Blocks.LADDER)));
 	public static final RegistryObject<ModLadderBlock> NIGHTMARE_LADDER = BLOCKS.register("nightmare_ladder", () -> new ModLadderBlock(Block.Properties.from(Blocks.LADDER)));
-		
-	/* Plants and Flowers
+	
+	// Plants and Flowers
 	public static final RegistryObject<ModTallGrassBlock> TORPID_GRASS = BLOCKS.register("torpid_grass", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.RED_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-	public static final RegistryObject<ModFlowerBlock> SEETHING_PLANT = BLOCKS.register("seething_plant", () -> new ModFlowerBlock(Effects.STRENGTH, 7, Block.Properties.create(Material.PLANTS, MaterialColor.RED_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0F).sound(SoundType.PLANT)));
+	//public static final RegistryObject<ModFlowerBlock> SEETHING_PLANT = BLOCKS.register("seething_plant", () -> new ModFlowerBlock(Effects.STRENGTH, 7, Block.Properties.create(Material.PLANTS, MaterialColor.RED_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0F).sound(SoundType.PLANT)));
 
 	public static final RegistryObject<ModTallGrassBlock> MELANCHOLY_GRASS = BLOCKS.register("melancholy_grass", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.BLUE_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
 	public static final RegistryObject<ModTallGrassBlock> MELANCHOLY_VINE = BLOCKS.register("melancholy_vine", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.BLUE_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-	public static final RegistryObject<ModFlowerBlock> WOEFUL_IVY = BLOCKS.register("woeful_ivy", () -> new ModFlowerBlock(Effects.SLOWNESS, 5, Block.Properties.create(Material.PLANTS, MaterialColor.BLUE_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
+	/*public static final RegistryObject<ModFlowerBlock> WOEFUL_IVY = BLOCKS.register("woeful_ivy", () -> new ModFlowerBlock(Effects.SLOWNESS, 5, Block.Properties.create(Material.PLANTS, MaterialColor.BLUE_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
 	public static final RegistryObject<ModFlowerBlock> WEEPING_WISTERIA = BLOCKS.register("weeping_wisteria", () -> new ModFlowerBlock(Effects.GLOWING, 9, Block.Properties.create(Material.PLANTS, MaterialColor.BLUE_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-	
+	*/
 	public static final RegistryObject<ModTallGrassBlock> LUSTFUL_IVY = BLOCKS.register("lustful_ivy", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.PINK_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-	public static final RegistryObject<ModFlowerBlock> LUSTFUL_LILY = BLOCKS.register("lustful_lily", () -> new ModFlowerBlock(Effects.ABSORPTION, 7, Block.Properties.create(Material.PLANTS, MaterialColor.PINK_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
+	//public static final RegistryObject<ModFlowerBlock> LUSTFUL_LILY = BLOCKS.register("lustful_lily", () -> new ModFlowerBlock(Effects.ABSORPTION, 7, Block.Properties.create(Material.PLANTS, MaterialColor.PINK_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
 
 	public static final RegistryObject<ModTallGrassBlock> JOYFUL_GRASS = BLOCKS.register("joyful_grass", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.YELLOW_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-	public static final RegistryObject<ModTallGrassBlock> JOYFUL_VINE = BLOCKS.register("joyful_vine", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.YELLOW_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
+	//public static final RegistryObject<ModTallGrassBlock> JOYFUL_VINE = BLOCKS.register("joyful_vine", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.YELLOW_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
 
 	public static final RegistryObject<ModTallGrassBlock> ENVIOUS_VINE = BLOCKS.register("envious_vine", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.GREEN_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-	public static final RegistryObject<ModTallGrassBlock> ENVIOUS_BUSH = BLOCKS.register("envious_bush", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.GREEN_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
-	*/
+	//public static final RegistryObject<ModTallGrassBlock> ENVIOUS_BUSH = BLOCKS.register("envious_bush", () -> new ModTallGrassBlock(Block.Properties.create(Material.PLANTS, MaterialColor.GREEN_TERRACOTTA).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)));
 }
