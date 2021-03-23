@@ -5,12 +5,14 @@ import com.ironicthoughts.dreamdimension.world.feature.DefaultModBiomeFeatures;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 
-public class NightmareForest extends Biome {
+public class NightmarishWastelands extends Biome {
 
-	public NightmareForest(Builder biomeBuilder) {
+	public NightmarishWastelands(Builder biomeBuilder) {
 		super(biomeBuilder);
 		
 		DefaultBiomeFeatures.addCarvers(this);
+		DefaultBiomeFeatures.addSprings(this);
+		DefaultBiomeFeatures.addOres(this);
 		DefaultBiomeFeatures.addJungleGrass(this);
 		DefaultModBiomeFeatures.addNightmareTrees(this);
 		DefaultBiomeFeatures.addSedimentDisks(this);
@@ -19,7 +21,7 @@ public class NightmareForest extends Biome {
 
 	@Override
 	public int getGrassColor(double posX, double posZ) {
-		return 0x545454;
+		return 0x4d4841;
 	}
 
 	@Override

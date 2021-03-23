@@ -11,6 +11,8 @@ public class EnlightenedWoods extends Biome {
 		super(biomeBuilder);
 		
 		DefaultBiomeFeatures.addCarvers(this);
+		DefaultBiomeFeatures.addSprings(this);
+		DefaultBiomeFeatures.addOres(this);
 		DefaultBiomeFeatures.addJungleGrass(this);
 		DefaultBiomeFeatures.addSedimentDisks(this);
 		DefaultModBiomeFeatures.addEnlightenedTrees(this);

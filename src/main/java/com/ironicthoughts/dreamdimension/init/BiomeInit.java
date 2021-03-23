@@ -13,8 +13,8 @@ import com.ironicthoughts.dreamdimension.world.biomes.LustfulFlatland;
 import com.ironicthoughts.dreamdimension.world.biomes.LustfulFlatlandSurfaceBuilder;
 import com.ironicthoughts.dreamdimension.world.biomes.MelancholyMeadow;
 import com.ironicthoughts.dreamdimension.world.biomes.MelancholyMeadowSurfaceBuilder;
-import com.ironicthoughts.dreamdimension.world.biomes.NightmareForest;
-import com.ironicthoughts.dreamdimension.world.biomes.NightmareForestSurfaceBuilder;
+import com.ironicthoughts.dreamdimension.world.biomes.NightmarishWastelands;
+import com.ironicthoughts.dreamdimension.world.biomes.NightmarishWastelandsSurfaceBuilder;
 import com.ironicthoughts.dreamdimension.world.biomes.SeethingWoodland;
 import com.ironicthoughts.dreamdimension.world.biomes.SeethingWoodlandSurfaceBuilder;
 
@@ -39,8 +39,8 @@ public class BiomeInit {
 	// Seething Woodland or Anger
 	public static final RegistryObject<Biome> SEETHING_WOODLAND = BIOMES.register("seething_woodland",
 			() -> new SeethingWoodland(new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST)
-					.depth(0.1F).scale(0.2F).temperature(1.0F).downfall(0.1F).waterColor(0xD56F3E)
-					.waterFogColor(0xFFBA9B).parent((String) null)
+					.depth(0.1F).scale(0.2F).temperature(1.0F).downfall(0.1F).waterColor(0xd4452f)
+					.waterFogColor(0xdb604d).parent((String) null)
 					.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
 						register("seething_surface", new SeethingWoodlandSurfaceBuilder(
 						SurfaceBuilderConfig::deserialize)),
@@ -50,8 +50,8 @@ public class BiomeInit {
 	// Melancholy Meadow or Sadness
 	public static final RegistryObject<Biome> MELANCHOLY_MEADOW = BIOMES.register("melancholy_meadow",
 			() -> new MelancholyMeadow(new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS)
-					.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0x32DCAE)
-					.waterFogColor(0x9FEBD6).parent((String) null)
+					.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0x226e8f)
+					.waterFogColor(0x3b6475).parent((String) null)
 					.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
 						register("melancholy_surface", new MelancholyMeadowSurfaceBuilder(
 						SurfaceBuilderConfig::deserialize)),
@@ -61,8 +61,8 @@ public class BiomeInit {
 	// Lustful Flatland or Love
 	public static final RegistryObject<Biome> LUSTFUL_FLATLAND = BIOMES.register("lustful_flatland",
 			() -> new LustfulFlatland(new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS)
-					.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0xEB3C66)
-					.waterFogColor(0xF896AE).parent((String) null)
+					.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0xe0608f)
+					.waterFogColor(0xe38aab).parent((String) null)
 					.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
 						register("lustful_surface", new LustfulFlatlandSurfaceBuilder(
 						SurfaceBuilderConfig::deserialize)),
@@ -72,7 +72,7 @@ public class BiomeInit {
 	// Joyful Plains or Happiness
 	public static final RegistryObject<Biome> JOYFUL_PLAINS = BIOMES.register("joyful_plains",
 			() -> new JoyfulPlains(new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS)
-					.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0xEDDA44)
+					.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0xe8db74)
 					.waterFogColor(0xFFF393).parent((String) null)
 					.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
 						register("joyful_surface", new JoyfulPlainsSurfaceBuilder(
@@ -102,13 +102,13 @@ public class BiomeInit {
 						new SurfaceBuilderConfig(Blocks.DIRT.getDefaultState(),
 								Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())))));
 	
-	// Nightmare Forest or Nightmare Biome
-		public static final RegistryObject<Biome> NIGHTMARE_FOREST = BIOMES.register("nightmare_forest",
-				() -> new NightmareForest(new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST)
-						.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0x890000)
-						.waterFogColor(0x683026).parent((String) null)
+	// Nightmarish Wastelands or Nightmare Biome
+		public static final RegistryObject<Biome> NIGHTMARISH_WASTELANDS = BIOMES.register("nightmarish_wastelands",
+				() -> new NightmarishWastelands(new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.FOREST)
+						.depth(0.1F).scale(0.2F).temperature(0.4F).downfall(1.0F).waterColor(0xad9484)
+						.waterFogColor(0xc7b5a9).parent((String) null)
 						.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
-							register("nightmare_surface", new NightmareForestSurfaceBuilder(
+							register("nightmarish_surface", new NightmarishWastelandsSurfaceBuilder(
 							SurfaceBuilderConfig::deserialize)),
 							new SurfaceBuilderConfig(Blocks.DIRT.getDefaultState(),
 									Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())))));
@@ -131,7 +131,7 @@ public class BiomeInit {
 		registerBiome(JOYFUL_PLAINS.get(), Type.DRY, Type.PLAINS);
 		registerBiome(ENVIOUS_RAINFOREST.get(), Type.LUSH, Type.JUNGLE, Type.DENSE, Type.HOT, Type.WET);
 		registerBiome(DREADFUL_UPLAND.get(), Type.MOUNTAIN, Type.COLD, Type.SNOWY, Type.WASTELAND);
-		registerBiome(NIGHTMARE_FOREST.get(), Type.FOREST, Type.DEAD, Type.RARE, Type.WASTELAND, Type.SPARSE, Type.SPOOKY);
+		registerBiome(NIGHTMARISH_WASTELANDS.get(), Type.FOREST, Type.DEAD, Type.RARE, Type.WASTELAND, Type.SPARSE, Type.SPOOKY);
 		registerBiome(ENLIGHTENED_WOODS.get(), Type.FOREST, Type.LUSH, Type.RARE, Type.DENSE);
 	}
 

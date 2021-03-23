@@ -11,21 +11,23 @@ public class LustfulFlatland extends Biome {
 		super(biomeBuilder);
 		
 		DefaultBiomeFeatures.addCarvers(this);
+		DefaultBiomeFeatures.addSprings(this);
+		DefaultBiomeFeatures.addOres(this);
 		DefaultBiomeFeatures.addJungleGrass(this);
 		DefaultBiomeFeatures.addSedimentDisks(this);
 		DefaultModBiomeFeatures.addLustfulTrees(this);
-		//DefaultModBiomeFeatures.addLustfulGrass(this);
+		DefaultModBiomeFeatures.addLustfulGrass(this);
 		DefaultModBiomeFeatures.addModOres(this);
 		DefaultModBiomeFeatures.addExtraTopazOre(this);
 	}
 
 	@Override
 	public int getGrassColor(double posX, double posZ) {
-		return 0xFF3792;
+		return 0xf04190;
 	}
 
 	@Override
 	public int getFoliageColor() {
-		return 0xFF3792;
+		return 0xf04190;
 	}
 }

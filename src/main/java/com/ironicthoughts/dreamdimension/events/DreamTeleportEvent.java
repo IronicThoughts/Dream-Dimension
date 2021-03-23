@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
 @Mod.EventBusSubscriber(modid = DreamDimension.MOD_ID, bus = Bus.FORGE)
-public class dreamTeleport extends DreamDimension {
+public class DreamTeleportEvent extends DreamDimension {
 
 	@SubscribeEvent
 	public static void isDreaming(PlayerSleepInBedEvent event) {

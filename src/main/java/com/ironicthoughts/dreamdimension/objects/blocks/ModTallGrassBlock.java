@@ -45,6 +45,7 @@ public class ModTallGrassBlock extends ModBushBlock implements IGrowable, IShear
 		return Block.OffsetType.XYZ;
 	}
 	
+	@Override
 	public boolean isReplaceable(BlockState state, Fluid fluid) {
 		return true;
 	}

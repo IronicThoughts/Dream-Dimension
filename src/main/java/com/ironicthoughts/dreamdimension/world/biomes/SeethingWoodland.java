@@ -11,10 +11,12 @@ public class SeethingWoodland extends Biome {
 		super(biomeBuilder);
 		
 		DefaultBiomeFeatures.addCarvers(this);
+		DefaultBiomeFeatures.addSprings(this);
+		DefaultBiomeFeatures.addOres(this);
 		DefaultBiomeFeatures.addJungleGrass(this);
 		DefaultBiomeFeatures.addSedimentDisks(this);
 		DefaultModBiomeFeatures.addSeethingTrees(this);
-		//DefaultModBiomeFeatures.addSeethingGrass(this);
+		DefaultModBiomeFeatures.addSeethingGrass(this);
 		DefaultModBiomeFeatures.addModOres(this);
 		DefaultModBiomeFeatures.addExtraShungiteOre(this);
 	}

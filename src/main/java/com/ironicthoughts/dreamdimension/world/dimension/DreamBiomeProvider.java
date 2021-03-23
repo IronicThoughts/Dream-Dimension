@@ -13,10 +13,10 @@ import net.minecraft.world.biome.provider.BiomeProvider;
 
 public class DreamBiomeProvider extends BiomeProvider {
 
-	private static final Set<Biome> biomeList = ImmutableSet.of(BiomeInit.SEETHING_WOODLAND.get(), BiomeInit.MELANCHOLY_MEADOW.get(), BiomeInit.LUSTFUL_FLATLAND.get(), BiomeInit.JOYFUL_PLAINS.get(), BiomeInit.ENVIOUS_RAINFOREST.get(), BiomeInit.DREADFUL_UPLAND.get(), BiomeInit.NIGHTMARE_FOREST.get(), BiomeInit.ENLIGHTENED_WOODS.get());
+	private static final Set<Biome> biomeList = ImmutableSet.of(BiomeInit.SEETHING_WOODLAND.get(), BiomeInit.MELANCHOLY_MEADOW.get(), BiomeInit.LUSTFUL_FLATLAND.get(), BiomeInit.JOYFUL_PLAINS.get(), BiomeInit.ENVIOUS_RAINFOREST.get(), BiomeInit.DREADFUL_UPLAND.get(), BiomeInit.NIGHTMARISH_WASTELANDS.get(), BiomeInit.ENLIGHTENED_WOODS.get());
 	@SuppressWarnings("unused")
 	private Random rand;
-	private final double biomeSize = 16.0D;
+	private final double biomeSize = 32.0D;
 	private VoronoiGenerator biomeNoise;
 
 	public DreamBiomeProvider(DreamBiomeProviderSettings settings) {

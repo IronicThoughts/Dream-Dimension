@@ -7,7 +7,11 @@ import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.blockstateprovider.WeightedBlockStateProvider;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.HugeTreeFeatureConfig;
 import net.minecraft.world.gen.feature.MultipleRandomFeatureConfig;
@@ -18,6 +22,7 @@ import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliageplacer.SpruceFoliagePlacer;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
+import net.minecraft.world.gen.placement.FrequencyConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
@@ -52,7 +57,6 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
 	public static final BlockState DEAD_LEAVES = BlockInit.DEAD_LEAVES.get().getDefaultState();
 	public static final BlockState RUBBER_LEAVES = BlockInit.RUBBER_LEAVES.get().getDefaultState();
 	
-	/*
 	// Plants and Flowers
 	public static final BlockState SEETHING_PLANT = BlockInit.SEETHING_PLANT.get().getDefaultState();
 	public static final BlockState TORPID_GRASS = BlockInit.TORPID_GRASS.get().getDefaultState();
@@ -73,52 +77,54 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
 	public static final BlockClusterFeatureConfig LUSTFUL_GRASS_CONFIG = (new BlockClusterFeatureConfig.Builder((new WeightedBlockStateProvider()).addWeightedBlockstate(LUSTFUL_IVY, 3).addWeightedBlockstate(LUSTFUL_LILY, 3), new SimpleBlockPlacer())).tries(16).build();
 	public static final BlockClusterFeatureConfig JOYFUL_GRASS_CONFIG = (new BlockClusterFeatureConfig.Builder((new WeightedBlockStateProvider()).addWeightedBlockstate(JOYFUL_GRASS, 3).addWeightedBlockstate(JOYFUL_VINE, 2), new SimpleBlockPlacer())).tries(16).build();
 	public static final BlockClusterFeatureConfig ENVIOUS_GRASS_CONFIG = (new BlockClusterFeatureConfig.Builder((new WeightedBlockStateProvider()).addWeightedBlockstate(ENVIOUS_VINE, 3).addWeightedBlockstate(ENVIOUS_BUSH, 2), new SimpleBlockPlacer())).tries(20).build();
-	*/
 	
+	// Bush Configs
+	public static final BaseTreeFeatureConfig ENVIOUS_GROUND_BUSH_CONFIG = (new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(POPLAR_LOG), new SimpleBlockStateProvider(POPLAR_LEAVES))).baseHeight(4).setSapling((IPlantable)BlockInit.POPLAR_SAPLING.get()).build();
+
 	// Tree Configs
 	public static final TreeFeatureConfig RAJADO_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(RAJADO_LOG), new SimpleBlockStateProvider(RAJADO_LEAVES), new SpruceFoliagePlacer(2, 0))).baseHeight(8).heightRandA(3).trunkHeight(1).trunkHeightRandom(1).trunkTopOffsetRandom(2).ignoreVines().setSapling((IPlantable) BlockInit.RAJADO_SAPLING.get()).build();
 	public static final TreeFeatureConfig MAHOE_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(MAHOE_LOG), new SimpleBlockStateProvider(MAHOE_LEAVES), new BlobFoliagePlacer(2, 0))).baseHeight(4).heightRandA(2).foliageHeight(3).ignoreVines().setSapling((IPlantable) BlockInit.MAHOE_SAPLING.get()).build();
 	public static final TreeFeatureConfig IVORY_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(IVORY_LOG), new SimpleBlockStateProvider(IVORY_LEAVES), new BlobFoliagePlacer(2, 0))).baseHeight(5).heightRandA(2).foliageHeight(3).ignoreVines().setSapling((IPlantable) BlockInit.IVORY_SAPLING.get()).build();
 	public static final TreeFeatureConfig MAPLE_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(MAPLE_LOG), new SimpleBlockStateProvider(MAPLE_LEAVES), new AcaciaFoliagePlacer(2, 0))).baseHeight(5).heightRandA(2).heightRandB(2).trunkHeight(0).ignoreVines().setSapling((IPlantable) BlockInit.MAPLE_SAPLING.get()).build();
 	public static final TreeFeatureConfig POPLAR_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(POPLAR_LOG), new SimpleBlockStateProvider(POPLAR_LEAVES), new BlobFoliagePlacer(2, 0))).baseHeight(4).heightRandA(8).foliageHeight(3).ignoreVines().setSapling((IPlantable) BlockInit.POPLAR_SAPLING.get()).build();
-	public static final HugeTreeFeatureConfig MEGA_POPLAR_TREE_CONFIG = (new HugeTreeFeatureConfig.Builder(new SimpleBlockStateProvider(POPLAR_LOG), new SimpleBlockStateProvider(POPLAR_LEAVES))).baseHeight(10).heightInterval(20).decorators(ImmutableList.of(new TrunkVineTreeDecorator(), new LeaveVineTreeDecorator())).setSapling((IPlantable) BlockInit.POPLAR_SAPLING.get()).build();
+	public static final HugeTreeFeatureConfig MEGA_POPLAR_TREE_CONFIG = (new HugeTreeFeatureConfig.Builder(new SimpleBlockStateProvider(POPLAR_LOG), new SimpleBlockStateProvider(POPLAR_LEAVES))).baseHeight(15).heightInterval(20).decorators(ImmutableList.of(new TrunkVineTreeDecorator(), new LeaveVineTreeDecorator())).setSapling((IPlantable) BlockInit.POPLAR_SAPLING.get()).build();
 	public static final TreeFeatureConfig EBONY_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(EBONY_LOG), new SimpleBlockStateProvider(EBONY_LEAVES), new BlobFoliagePlacer(2, 0))).baseHeight(4).heightRandA(2).foliageHeight(3).ignoreVines().setSapling((IPlantable) BlockInit.EBONY_SAPLING.get()).build();
 	public static final TreeFeatureConfig DEAD_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(DEAD_LOG), new SimpleBlockStateProvider(DEAD_LEAVES), new BlobFoliagePlacer(2, 0))).baseHeight(4).heightRandA(2).foliageHeight(3).ignoreVines().setSapling((IPlantable) BlockInit.DEAD_SAPLING.get()).build();
 	public static final HugeTreeFeatureConfig RUBBER_TREE_CONFIG = (new HugeTreeFeatureConfig.Builder(new SimpleBlockStateProvider(RUBBER_LOG), new SimpleBlockStateProvider(RUBBER_LEAVES))).baseHeight(6).setSapling((IPlantable) BlockInit.RUBBER_SAPLING.get()).build();
 
     // Adds ores from the Dream Dimension mod to custom biomes
     public static void addModOres(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, SHUNGITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(11, 0, 0, 64))));
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JET_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 0, 0, 64))));
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, CHRYSOLITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(14, 0, 0, 64))));
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(18, 0, 0, 64))));
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, WHITE_ONYX_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(9, 0, 0, 128))));
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, TOPAZ_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(13, 0, 0, 64))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, SHUNGITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 0, 0, 24))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JET_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 0, 0, 24))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, CHRYSOLITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 0, 0, 24))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 0, 0, 24))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, WHITE_ONYX_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 0, 0, 48))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, TOPAZ_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 0, 0, 24))));
     }
 
     // Adds extra ores from the Dream Dimension mod to custom biomes
     public static void addExtraShungiteOre(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, SHUNGITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 64))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, SHUNGITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 0, 0, 36))));
     }
     
     public static void addExtraJetOre(Biome biomeIn) {
- 	   biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JET_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 64))));
+ 	   biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, JET_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 0, 0, 36))));
     }
     
     public static void addExtraChrysoliteOre(Biome biomeIn) {
- 	   biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, CHRYSOLITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 64))));
+ 	   biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, CHRYSOLITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 0, 0, 36))));
     }
     
     public static void addExtraApatiteOre(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 64))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, APATITE_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 0, 0, 36))));
     }
     
     public static void addExtraWhiteOnyxOre(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, WHITE_ONYX_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 128))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, WHITE_ONYX_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 0, 0, 60))));
     }
     
     public static void addExtraTopazOre(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, TOPAZ_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 64))));
+	    biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, TOPAZ_ORE, 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 0, 0, 36))));
     }
     
     // Adds tree decoration into the custom biomes in the Dream Dimension mod
@@ -139,7 +145,7 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
     }
     
     public static void addEnviousTrees(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_SELECTOR.withConfiguration(new MultipleRandomFeatureConfig(ImmutableList.of(Feature.MEGA_JUNGLE_TREE.withConfiguration(MEGA_POPLAR_TREE_CONFIG).withChance(1.0F)), Feature.NORMAL_TREE.withConfiguration(POPLAR_TREE_CONFIG))).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(50, 0.1F, 1))));
+	    biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.NORMAL_TREE.withConfiguration(POPLAR_TREE_CONFIG).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(25, 0.1F, 1))));
     }
     
     public static void addDreadfulTrees(Biome biomeIn) {
@@ -154,7 +160,6 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
     	biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.DARK_OAK_TREE.withConfiguration(RUBBER_TREE_CONFIG).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(40, 0.1F, 1))));
     }
     
-    /*
     // Adds grass decoration to the custom biomes in the Dream Dimension mod
     public static void addSeethingGrass(Biome biomeIn) {
  	    biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(SEETHING_GRASS_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(20))));
@@ -172,8 +177,8 @@ public class DefaultModBiomeFeatures extends DefaultBiomeFeatures {
  	   biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(JOYFUL_GRASS_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(20))));
     }
     
-    public static void addEnviousGrass(Biome biomeIn) {
-	    biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(ENVIOUS_GRASS_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(20))));
+    // Envious Rainforest Features
+    public static void addEnviousBushes(Biome biomeIn) {
+        biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_SELECTOR.withConfiguration(new MultipleRandomFeatureConfig(ImmutableList.of(Feature.JUNGLE_GROUND_BUSH.withConfiguration(ENVIOUS_GROUND_BUSH_CONFIG).withChance(0.4F), Feature.FANCY_TREE.withConfiguration(DEAD_TREE_CONFIG).withChance(0.05f), Feature.MEGA_JUNGLE_TREE.withConfiguration(MEGA_POPLAR_TREE_CONFIG).withChance(6.0F)), Feature.RANDOM_PATCH.withConfiguration(ENVIOUS_GRASS_CONFIG))).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(50, 0.1F, 1))));
     }
-    */
 }

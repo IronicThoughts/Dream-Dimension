@@ -1,4 +1,4 @@
-/*package com.ironicthoughts.dreamdimension.objects.blocks;
+package com.ironicthoughts.dreamdimension.objects.blocks;
 
 import java.util.Random;
 import java.util.stream.Stream;
@@ -12,7 +12,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer.Builder;
@@ -111,6 +110,7 @@ public class DreamCrystal extends Block {
 			}
 		}
 	
+	// Powers and unpowers the Dream Altar block when clicked with Dream Dust
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 		ItemStack itemstack = player.getHeldItem(handIn);
 		if (itemstack.isEmpty()) {
@@ -119,13 +119,13 @@ public class DreamCrystal extends Block {
 			Item item = itemstack.getItem();
 			if (item == ItemInitOld.DREAM_DUST) {
 				itemstack.shrink(1);
-				player.setHeldItem(handIn, new ItemStack(Items.AIR));
+				int item1 = itemstack.getStack().getCount();
 				BlockState blockstate1 = this.isPowered(state, worldIn, pos);
 				float f = blockstate1.get(POWERED) ? 0.6F : 0.5F;
 				worldIn.playSound((PlayerEntity) null, pos, SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.BLOCKS, 0.3F, f);
 			}
 		}
-		return ActionResultType.SUCCESS;
+		return ActionResultType.CONSUME;
 	}
 	
 	@SuppressWarnings("deprecation")
@@ -140,4 +140,4 @@ public class DreamCrystal extends Block {
 	public boolean canEntitySpawn(BlockState state, IBlockReader worldIn, BlockPos pos, EntityType<?> type) {
 	      return false;
 	}
-}*/
+}

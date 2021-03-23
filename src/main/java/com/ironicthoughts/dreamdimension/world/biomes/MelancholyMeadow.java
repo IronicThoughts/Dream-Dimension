@@ -11,10 +11,12 @@ public class MelancholyMeadow extends Biome {
 		super(biomeBuilder);
 		
 		DefaultBiomeFeatures.addCarvers(this);
+		DefaultBiomeFeatures.addSprings(this);
+		DefaultBiomeFeatures.addOres(this);
 		DefaultBiomeFeatures.addJungleGrass(this);
 		DefaultBiomeFeatures.addSedimentDisks(this);
 		DefaultModBiomeFeatures.addMelancholyTrees(this);
-		//DefaultModBiomeFeatures.addMelancholyGrass(this);
+		DefaultModBiomeFeatures.addMelancholyGrass(this);
 		DefaultModBiomeFeatures.addModOres(this);
 		DefaultModBiomeFeatures.addExtraJetOre(this);
 	}

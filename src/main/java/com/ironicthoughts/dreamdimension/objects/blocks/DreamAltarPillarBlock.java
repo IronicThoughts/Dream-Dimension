@@ -1,13 +1,15 @@
-/*package com.ironicthoughts.dreamdimension.objects.blocks;
+package com.ironicthoughts.dreamdimension.objects.blocks;
 
 import java.util.Random;
 import java.util.stream.Stream;
 
+import com.ironicthoughts.dreamdimension.DreamDimension;
 import com.ironicthoughts.dreamdimension.init.ItemInitOld;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
@@ -32,6 +34,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
+import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.server.ServerWorld;
 
 public class DreamAltarPillarBlock extends Block {
@@ -143,6 +146,7 @@ public class DreamAltarPillarBlock extends Block {
 	      }
 	   }
 	
+	// Powers and unpowers the Dream Altar block when clicked with Dream Dust
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 		ItemStack itemstack = player.getHeldItem(handIn);
 		if (itemstack.isEmpty()) {
@@ -160,6 +164,19 @@ public class DreamAltarPillarBlock extends Block {
 		return ActionResultType.CONSUME;
 	}
 	
+	public ActionResultType onDreamTeleport(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+		ItemStack itemstack = player.getHeldItem(handIn);
+		Item item = itemstack.getItem();
+		BlockState blockstate = this.isPowered(state, worldIn, pos);
+		if (item == ItemInitOld.DREAM_DUST && blockstate == state.cycle(POWERED)) {
+			return ActionResultType.PASS;
+		} else {
+			PlayerEntity playerentity = player;
+			Entity entity = playerentity.changeDimension(DimensionType.byName(DreamDimension.DREAM));
+		}
+		return ActionResultType.SUCCESS;
+	}
+	
 	@SuppressWarnings("deprecation")
 	public BlockState isPowered(BlockState state, World worldIn, BlockPos pos) {
 		state = state.cycle(LIT);
@@ -172,4 +189,4 @@ public class DreamAltarPillarBlock extends Block {
 	public boolean canEntitySpawn(BlockState state, IBlockReader worldIn, BlockPos pos, EntityType<?> type) {
 	      return false;
 	}
-}*/
+}

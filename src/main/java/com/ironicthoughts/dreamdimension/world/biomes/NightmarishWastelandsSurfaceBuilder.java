@@ -12,9 +12,9 @@ import net.minecraft.world.chunk.IChunk;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 
-public class NightmareForestSurfaceBuilder extends SurfaceBuilder<SurfaceBuilderConfig> {
+public class NightmarishWastelandsSurfaceBuilder extends SurfaceBuilder<SurfaceBuilderConfig> {
 
-	public NightmareForestSurfaceBuilder(Function<Dynamic<?>, ? extends SurfaceBuilderConfig> function) {
+	public NightmarishWastelandsSurfaceBuilder(Function<Dynamic<?>, ? extends SurfaceBuilderConfig> function) {
 		super(function);
 	}
 
